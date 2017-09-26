@@ -1,0 +1,6 @@
+framework module Pods_NotchToolkit_Example {
+  umbrella header "Pods-NotchToolkit-Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
