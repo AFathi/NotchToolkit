@@ -22,6 +22,9 @@ The `NotchToolbar` has options that allow you change
 `background color, height, toolList icons Edge Inset, modes for statusBar & noStatusBar...etc.`
 check **NotchToolbar Options** in the bottom of this file for more details.
 
+## Example Project
+To try the example project, simply download this repo then open `NotchToolkit-Example.xcworkspace` project file.
+
 ## Install using CocoaPods
 1. Download [CocoaPods](http://cocoapods.org) using this command in `Terminal`
 ```
