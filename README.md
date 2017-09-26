@@ -6,40 +6,40 @@ Inspired by <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="l
 ![Demo](preview.gif)
 
 ## Compatibility
-Although `NotchToolkit` is made for iPhone X; however, it can be implemented in older iPhone devices. This framwork was tested on:  
+Although `NotchToolkit` is made for iPhone X; however, it can be implemented in older iPhone devices. This framwork was tested on:
 
-        1. iPhone X
-        2. iPhone 8 plus, 7 plus, 6s plus and 6 plus
-        3. iPhone 8, 7, 6s and 6
-        4. iPhone SE and 5s
-        
-`NothcToolkit` is compatible with 
+1. iPhone X
+2. iPhone 8 plus, 7 plus, 6s plus and 6 plus
+3. iPhone 8, 7, 6s and 6
+4. iPhone SE and 5s
 
-        1. iOS 11
-        2. Swift 4
-        
-The `NotchToolbar` has options that allow you change 
-`background color, height, toolList icons Edge Inset, modes for statusBar & noStatusBar...etc.` 
-check **NotchToolbar Options** in the bottom of this file for more details. 
+`NothcToolkit` is compatible with
+
+1. iOS 11
+2. Swift 4
+
+The `NotchToolbar` has options that allow you change
+`background color, height, toolList icons Edge Inset, modes for statusBar & noStatusBar...etc.`
+check **NotchToolbar Options** in the bottom of this file for more details.
 
 ## Install using CocoaPods
 1. Download [CocoaPods](http://cocoapods.org) using this command in `Terminal`
 ```
 $ sudo gem install cocoapods
 ```
-2. Redirect to your project folder in `Terminal` 
+2. Redirect to your project folder in `Terminal`
 ```
 $ cd YOUR_PROJECT_FILE_PATH
 ```
-3. Initialize a pod in `Terminal` 
+3. Initialize a pod in `Terminal`
 ```
 $ pod init
 ```
-4. Open Podfile in a text editor and add this line 
+4. Open Podfile in a text editor and add this line
 ```
 pod 'NotchToolkit', :git => 'https://github.com/AFathi/NotchToolkit.git', :tag => '1.0'
 ```
-5. Go back to `Terminal` and install the pod 
+5. Go back to `Terminal` and install the pod
 ```
 $ pod install
 ```
@@ -50,7 +50,7 @@ $ pod install
 3. Add delegate functions
 ```
 func deviceDidRotate() {
-}    
+}
 func didTapToolIcon(_ tools: UICollectionView, toolIndex: IndexPath, section: Int, row: Int) {
 }
 ```
@@ -60,26 +60,26 @@ let toolbar = NotchToolbar()
 ```
 5. Set options and initialize in `viewDidLoad`
 ```
-        toolbar.notch.isVisible = false
-        
-        toolbar.notch.height = 250
-        
-        toolbar.toolList = ["🤔", "🤓", "📱", "👩‍💻", "👨‍💻", "✅", UIImage(named:"pikachusquare"), "🔥"]
+toolbar.notch.isVisible = false
 
-        toolbar.delegate = self
-        toolbar.initializeToolbar(self)
+toolbar.notch.height = 250
+
+toolbar.toolList = ["🤔", "🤓", "📱", "👩‍💻", "👨‍💻", "✅", UIImage(named:"pikachusquare"), "🔥"]
+
+toolbar.delegate = self
+toolbar.initializeToolbar(self)
 ```
 6. Call .autoResize() function in the `deviceDidRotate` delegate function
 ```
 func deviceDidRotate() {
-    toolbar.autoResize()
-}    
+toolbar.autoResize()
+}
 ```
 You're all set!
 
 ## NotchToolbar Options
 #### toolbar.scrollMode
-This gives you options to change the NotchToolbar scrolling directions. Default is auto.  
+This gives you options to change the NotchToolbar scrolling directions. Default is auto.
 ```
 .alwaysHorizontal
 .alwaysVertical
@@ -154,16 +154,16 @@ TimeInterval(INTERVAL)
 #### initializeToolbar(_ vc:UIViewController)
 This function is required to initialize the NotchToolbar. It is recommended to call this function in `viewDidLoad` after setting the `NotchToolbar` options.
 ```
-        /*
-        NotchToolbar Options here
-        */
-        toolbar.initializeToolbar(self)
+/*
+NotchToolbar Options here
+*/
+toolbar.initializeToolbar(self)
 ```
 #### showOrHide()
 This function allows you to show and hide the NotchToolbar. You can call this function in the method that handles showing/hiding the toolbar.
 ```
 @IBAction func buttonClicked(_ sender: UIButton) {
-        toolbar.showOrHide()
+toolbar.showOrHide()
 }
 ```
 
@@ -171,32 +171,33 @@ This function allows you to show and hide the NotchToolbar. You can call this fu
 #### deviceDidRotate()
 This delegate function detects when the device orientation changes. Calling **toolbar.autoResize()** function inside this delegate is **required**.
 ```
-    func deviceDidRotate() {
-        toolbar.autoResize()
-    }
+func deviceDidRotate() {
+toolbar.autoResize()
+}
 ```
 #### didTapToolIcon(_ tools: UICollectionView, toolIndex:IndexPath, section: Int, row: Int)
 This delegate function allows you to detect which toolbar icon was selected.
 ```
-    func didTapToolIcon(_ tools: UICollectionView, toolIndex: IndexPath, section: Int, row: Int) {
-        let alert = UIAlertController(title: "NotchToolkit Alert", message: iconListTest[row], preferredStyle: UIAlertControllerStyle.alert)
-        alert.addAction(UIAlertAction(title: "k", style: UIAlertActionStyle.cancel, handler: {
-            (UIAlertAction)in
-        }))
-        self.present(alert, animated: true, completion: nil)
-    }
+func didTapToolIcon(_ tools: UICollectionView, toolIndex: IndexPath, section: Int, row: Int) {
+let alert = UIAlertController(title: "NotchToolkit Alert", message: iconListTest[row], preferredStyle: UIAlertControllerStyle.alert)
+alert.addAction(UIAlertAction(title: "k", style: UIAlertActionStyle.cancel, handler: {
+(UIAlertAction)in
+}))
+self.present(alert, animated: true, completion: nil)
+}
 ```
 ## More Options
 This framework include a `UIView` extension that allows you draw a notch bezier path to any `UIView` class/subclass.
 ### addOvalOrCorner(type:curveType, position:curvePosition, curve:CGFloat?, customBounds:CGRect? = nil)
-This is a UIView extension that allows you add ovals and rounded corners to a UIView.  
+This is a UIView extension that allows you add ovals and rounded corners to a UIView.
 
-     - For type `oval`, set `curve` from 1.0 - 10.0.
-     - For type `corner`, `curve` is the radius size.
-     - Check `curveType` & `curvePosition` for more info.
+- For type `oval`, set `curve` from 1.0 - 10.0.
+- For type `corner`, `curve` is the radius size.
+- Check `curveType` & `curvePosition` for more info.
 ### Example
 ```
 myView.addOvalOrCorner(type: .oval, position: .horizontalSides, curve: 1.5)
 ```
 ### Preview
-![Demo](https://im3.ezgif.com/tmp/ezgif-3-c0df0bb7a3.gif)
+![Demo](c&o.gif)
+
