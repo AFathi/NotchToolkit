@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.description  = "A light-weight framework for iOS that allow developers use the iPhone's X notch space in creative ways."
 
   s.homepage     = "http://github.com/AFathi"
-  s.screenshots  = "https://github.com/AFathi/NotchToolkit/blob/master/preview.gif"
+  s.screenshots  = "https://github.com/AFathi/NotchToolkit/blob/master/preview.gif?raw=true"
   s.license      = { :type => "MIT", :file => "LICENSE" }
 
   s.author             = { "AFathi" => "me@ahmedbekhit.com" }
