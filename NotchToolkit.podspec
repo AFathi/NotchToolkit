@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "11.0"
 
-  s.source       = { :git => "https://github.com/AFathi/NotchToolkit.git", :tag => "1.0" }
+  s.source       = { :git => "https://github.com/AFathi/NotchToolkit.git", :tag => "1.02" }
 
   s.source_files = "NotchToolkit", "NotchToolkit/**/*.{h,m,swift}"
 
