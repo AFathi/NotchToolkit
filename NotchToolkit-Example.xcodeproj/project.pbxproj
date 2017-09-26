@@ -10,6 +10,8 @@
 		8B46D7347C51E13D6A8F5752 /* Pods_NotchToolkit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB89330EB9E75950CC5DD1E5 /* Pods_NotchToolkit_Example.framework */; };
 		9F0D407B72BC9454BFAE5029 /* Pods_NotchToolkit_ExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F265AEF721C276AAF9FEFDF8 /* Pods_NotchToolkit_ExampleTests.framework */; };
 		FB211D911F7AE647008D87CE /* CornerOvalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB211D901F7AE647008D87CE /* CornerOvalViewController.swift */; };
+		FB211DDE1F7B0F15008D87CE /* NotchToolkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB211DDB1F7B0F07008D87CE /* NotchToolkit.framework */; };
+		FB211DDF1F7B0F15008D87CE /* NotchToolkit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FB211DDB1F7B0F07008D87CE /* NotchToolkit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FBB4BF521F79ED69001992BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB4BF511F79ED69001992BA /* AppDelegate.swift */; };
 		FBB4BF541F79ED69001992BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB4BF531F79ED69001992BA /* ViewController.swift */; };
 		FBB4BF571F79ED69001992BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBB4BF551F79ED69001992BA /* Main.storyboard */; };
@@ -19,6 +21,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		FB211DDA1F7B0F07008D87CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB211DD51F7B0F07008D87CE /* NotchToolkit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FBB4BF131F79EC77001992BA;
+			remoteInfo = NotchToolkit;
+		};
+		FB211DDC1F7B0F07008D87CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB211DD51F7B0F07008D87CE /* NotchToolkit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FBB4BF1C1F79EC77001992BA;
+			remoteInfo = NotchToolkitTests;
+		};
+		FB211DE01F7B0F15008D87CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB211DD51F7B0F07008D87CE /* NotchToolkit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = FBB4BF121F79EC77001992BA;
+			remoteInfo = NotchToolkit;
+		};
 		FBB4BF631F79ED69001992BA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FBB4BF461F79ED69001992BA /* Project object */;
@@ -35,6 +58,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				FB211DDF1F7B0F15008D87CE /* NotchToolkit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,6 +73,7 @@
 		F02A2878BAA2A5AB05FCF077 /* Pods-NotchToolkit-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotchToolkit-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NotchToolkit-Example/Pods-NotchToolkit-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F265AEF721C276AAF9FEFDF8 /* Pods_NotchToolkit_ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotchToolkit_ExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB211D901F7AE647008D87CE /* CornerOvalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerOvalViewController.swift; sourceTree = "<group>"; };
+		FB211DD51F7B0F07008D87CE /* NotchToolkit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = NotchToolkit.xcodeproj; sourceTree = "<group>"; };
 		FBB4BF4E1F79ED69001992BA /* NotchToolkit-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NotchToolkit-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB4BF511F79ED69001992BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBB4BF531F79ED69001992BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB211DDE1F7B0F15008D87CE /* NotchToolkit.framework in Frameworks */,
 				8B46D7347C51E13D6A8F5752 /* Pods_NotchToolkit_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,9 +127,19 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FB211DD61F7B0F07008D87CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB211DDB1F7B0F07008D87CE /* NotchToolkit.framework */,
+				FB211DDD1F7B0F07008D87CE /* NotchToolkitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		FBB4BF451F79ED69001992BA = {
 			isa = PBXGroup;
 			children = (
+				FB211DD51F7B0F07008D87CE /* NotchToolkit.xcodeproj */,
 				FBB4BF501F79ED69001992BA /* NotchToolkit-Example */,
 				FBB4BF651F79ED69001992BA /* NotchToolkit-ExampleTests */,
 				FBB4BF4F1F79ED69001992BA /* Products */,
@@ -162,6 +198,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				FB211DE11F7B0F15008D87CE /* PBXTargetDependency */,
 			);
 			name = "NotchToolkit-Example";
 			productName = "NotchToolkit-Example";
@@ -221,6 +258,12 @@
 			mainGroup = FBB4BF451F79ED69001992BA;
 			productRefGroup = FBB4BF4F1F79ED69001992BA /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FB211DD61F7B0F07008D87CE /* Products */;
+					ProjectRef = FB211DD51F7B0F07008D87CE /* NotchToolkit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				FBB4BF4D1F79ED69001992BA /* NotchToolkit-Example */,
@@ -228,6 +271,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		FB211DDB1F7B0F07008D87CE /* NotchToolkit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = NotchToolkit.framework;
+			remoteRef = FB211DDA1F7B0F07008D87CE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FB211DDD1F7B0F07008D87CE /* NotchToolkitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NotchToolkitTests.xctest;
+			remoteRef = FB211DDC1F7B0F07008D87CE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		FBB4BF4C1F79ED69001992BA /* Resources */ = {
@@ -373,6 +433,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		FB211DE11F7B0F15008D87CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NotchToolkit;
+			targetProxy = FB211DE01F7B0F15008D87CE /* PBXContainerItemProxy */;
+		};
 		FBB4BF641F79ED69001992BA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = FBB4BF4D1F79ED69001992BA /* NotchToolkit-Example */;
