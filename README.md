@@ -204,3 +204,5 @@ myView.addOvalOrCorner(type: .oval, position: .horizontalSides, curve: 1.5)
 ### Preview
 ![Demo](c&o.gif)
 
+## LICENSE
+NotchToolkit is under MIT license. Check the [LICENSE](LICENSE) file for more details.

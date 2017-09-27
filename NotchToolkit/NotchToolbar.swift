@@ -60,6 +60,8 @@ public class NotchToolbar: NSObject, UICollectionViewDataSource, UICollectionVie
      */
     public var toolsTitleColor:UIColor = .white
     
+    public var recentOrientation: deviceOrientation!
+
     public var toolsFlow = UICollectionViewFlowLayout()
 
     /**
@@ -78,6 +80,7 @@ public class NotchToolbar: NSObject, UICollectionViewDataSource, UICollectionVie
             default:
                 break
             }
+            recentOrientation = .portrait
             tools = UICollectionView(frame: CGRect(x:0, y:0, width:notch.bounds.width, height:notch.bounds.height), collectionViewLayout: toolsFlow)
             tools?.register(NotchToolCell.self, forCellWithReuseIdentifier: "toolCell")
             tools?.delegate = self
@@ -130,16 +133,21 @@ extension NotchToolbar {
         
         switch UIDevice.current.orientation {
         case .portrait:
+            recentOrientation = .portrait
             notch.refresh(orientation: .portrait)
             tools?.bounds = CGRect(x: 0, y: 0, width: notch.bounds.size.width, height: notch.bounds.size.height)
             tools?.center = CGPoint(x: notch.bounds.size.width/2, y: notch.bounds.size.height/2)
             tools?.reloadData()
             tools?.setContentOffset(offsetPoint, animated: false)
         case .portraitUpsideDown:
-            //no changes
-            break
+            notch.refresh(orientation: recentOrientation)
+            tools?.bounds = CGRect(x: 0, y: 0, width: notch.bounds.size.width, height: notch.bounds.size.height)
+            tools?.center = CGPoint(x: notch.bounds.size.width/2, y: notch.bounds.size.height/2)
+            tools?.reloadData()
+            tools?.setContentOffset(offsetPoint, animated: false)
         case .landscapeLeft:
             if UIScreen.main.bounds.size.width > UIScreen.main.bounds.height {
+                recentOrientation = .landscapeLeft
                 notch.refresh(orientation: .landscapeLeft)
                 tools?.bounds = CGRect(x: 0, y: 0, width: notch.bounds.size.width, height: notch.bounds.size.height)
                 tools?.center = CGPoint(x: notch.bounds.size.width/2, y: notch.bounds.size.height/2)
@@ -148,14 +156,31 @@ extension NotchToolbar {
             }
         case .landscapeRight:
             if UIScreen.main.bounds.size.width > UIScreen.main.bounds.height {
+                recentOrientation = .landscapeRight
                 notch.refresh(orientation: .landscapeRight)
                 tools?.bounds = CGRect(x: 0, y: 0, width: notch.bounds.size.width, height: notch.bounds.size.height)
                 tools?.center = CGPoint(x: notch.bounds.size.width/2, y: notch.bounds.size.height/2)
                 tools?.reloadData()
                 tools?.setContentOffset(offsetPoint, animated: false)
             }
-        default:
-            break
+        case .faceDown:
+            notch.refresh(orientation: recentOrientation)
+            tools?.bounds = CGRect(x: 0, y: 0, width: notch.bounds.size.width, height: notch.bounds.size.height)
+            tools?.center = CGPoint(x: notch.bounds.size.width/2, y: notch.bounds.size.height/2)
+            tools?.reloadData()
+            tools?.setContentOffset(offsetPoint, animated: false)
+        case .faceUp:
+            notch.refresh(orientation: recentOrientation)
+            tools?.bounds = CGRect(x: 0, y: 0, width: notch.bounds.size.width, height: notch.bounds.size.height)
+            tools?.center = CGPoint(x: notch.bounds.size.width/2, y: notch.bounds.size.height/2)
+            tools?.reloadData()
+            tools?.setContentOffset(offsetPoint, animated: false)
+        case .unknown:
+            notch.refresh(orientation: recentOrientation)
+            tools?.bounds = CGRect(x: 0, y: 0, width: notch.bounds.size.width, height: notch.bounds.size.height)
+            tools?.center = CGPoint(x: notch.bounds.size.width/2, y: notch.bounds.size.height/2)
+            tools?.reloadData()
+            tools?.setContentOffset(offsetPoint, animated: false)
         }
     }
     

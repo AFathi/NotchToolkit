@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "NotchToolkit"
-  s.version      = "1.0"
+  s.version      = "1.1"
   s.summary      = "A light-weight iOS framework for iPhone's X notch."
 
   s.description  = "A light-weight framework for iOS that allow developers use the iPhone's X notch space in creative ways."
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "11.0"
 
-  s.source       = { :git => "https://github.com/AFathi/NotchToolkit.git", :tag => "1.02" }
+  s.source       = { :git => "https://github.com/AFathi/NotchToolkit.git", :tag => "1.1" }
 
   s.source_files = "NotchToolkit", "NotchToolkit/**/*.{h,m,swift}"
 
