@@ -20,7 +20,7 @@ Although `NotchToolkit` is made for iPhone X; however, it can be implemented in 
 
 The `NotchToolbar` has options that allow you change
 `background color, height, toolList icons Edge Inset, modes for statusBar & noStatusBar...etc.`
-check **NotchToolbar Options** in the bottom of this file for more details.
+check [**NotchToolbar Options**](#notchtoolbar-options) for more details.
 
 ## Example Project
 To try the example project, simply download this repo then open `NotchToolkit-Example.xcworkspace` project file.
@@ -75,7 +75,7 @@ toolbar.initializeToolbar(self)
 6. Call .autoResize() function in the `deviceDidRotate` delegate function
 ```
 func deviceDidRotate() {
-toolbar.autoResize()
+    toolbar.autoResize()
 }
 ```
 You're all set!
@@ -160,13 +160,13 @@ This function is required to initialize the NotchToolbar. It is recommended to c
 /*
 NotchToolbar Options here
 */
-toolbar.initializeToolbar(self)
+    toolbar.initializeToolbar(self)
 ```
 #### showOrHide()
 This function allows you to show and hide the NotchToolbar. You can call this function in the method that handles showing/hiding the toolbar.
 ```
 @IBAction func buttonClicked(_ sender: UIButton) {
-toolbar.showOrHide()
+    toolbar.showOrHide()
 }
 ```
 
@@ -175,18 +175,17 @@ toolbar.showOrHide()
 This delegate function detects when the device orientation changes. Calling **toolbar.autoResize()** function inside this delegate is **required**.
 ```
 func deviceDidRotate() {
-toolbar.autoResize()
+    toolbar.autoResize()
 }
 ```
 #### didTapToolIcon(_ tools: UICollectionView, toolIndex:IndexPath, section: Int, row: Int)
 This delegate function allows you to detect which toolbar icon was selected.
 ```
 func didTapToolIcon(_ tools: UICollectionView, toolIndex: IndexPath, section: Int, row: Int) {
-let alert = UIAlertController(title: "NotchToolkit Alert", message: iconListTest[row], preferredStyle: UIAlertControllerStyle.alert)
-alert.addAction(UIAlertAction(title: "k", style: UIAlertActionStyle.cancel, handler: {
-(UIAlertAction)in
-}))
-self.present(alert, animated: true, completion: nil)
+    let alert = UIAlertController(title: "NotchToolkit Alert", message: iconListTest[row], preferredStyle: UIAlertControllerStyle.alert)
+    alert.addAction(UIAlertAction(title: "k", style: UIAlertActionStyle.cancel, handler: {(UIAlertAction)in
+    }))
+    self.present(alert, animated: true, completion: nil)
 }
 ```
 ## More Options
@@ -199,7 +198,7 @@ This is a UIView extension that allows you add ovals and rounded corners to a UI
 - Check `curveType` & `curvePosition` for more info.
 ### Example
 ```
-myView.addOvalOrCorner(type: .oval, position: .horizontalSides, curve: 1.5)
+    myView.addOvalOrCorner(type: .oval, position: .horizontalSides, curve: 1.5)
 ```
 ### Preview
 ![Demo](c&o.gif)
