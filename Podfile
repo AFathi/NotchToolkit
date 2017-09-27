@@ -6,7 +6,7 @@ target 'NotchToolkit-Example' do
   use_frameworks!
 
   # Pods for NotchToolkit-Example
-	pod 'NotchToolkit', :git => 'https://github.com/AFathi/NotchToolkit.git', :tag => '1.0'
+	pod 'NotchToolkit', :git => 'https://github.com/AFathi/NotchToolkit.git', :tag => '1.1'
 
   target 'NotchToolkit-ExampleTests' do
     inherit! :search_paths
