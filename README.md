@@ -40,7 +40,7 @@ $ pod init
 ```
 4. Open Podfile in a text editor and add this line
 ```
-pod 'NotchToolkit', :git => 'https://github.com/AFathi/NotchToolkit.git', :tag => '1.0'
+pod 'NotchToolkit'
 ```
 5. Go back to `Terminal` and install the pod
 ```
