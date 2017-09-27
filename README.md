@@ -16,7 +16,7 @@ Although `NotchToolkit` is made for iPhone X; however, it can be implemented in 
 `NothcToolkit` requires
 
 - iOS 11
-- Swift 4
+- Swift 3.2 or higher
 
 The `NotchToolbar` has options that allow you change
 `background color, height, toolList icons Edge Inset, modes for statusBar & noStatusBar...etc.`
