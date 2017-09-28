@@ -18,9 +18,8 @@ Although `NotchToolkit` is made for iPhone X, it can be implemented in older iPh
 - iOS 11
 - Swift 3.2 or higher
 
- `NotchToolbar` has options that allow you to change
-`background color, height, icons... etc.`
-check [**NotchToolbar Options**](#notchtoolbar-options) for more details.
+ `NotchToolbar` has options to customize your Toolbar and UIView,
+check [**NotchToolbar Options**](#notchtoolbar-options) and [**More Options**](#more-options) for more details.
 
 ## Example Project
 To try the example project, simply download this repo then open `NotchToolkit-Example.xcworkspace` project file.
