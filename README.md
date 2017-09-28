@@ -18,7 +18,7 @@ Although `NotchToolkit` is made for iPhone X, it can be implemented in older iPh
 - iOS 11
 - Swift 3.2 or higher
 
- `NotchToolbar` has options to customize your Toolbar and UIView,
+ `NotchToolkit` has options to customize your Toolbar and UIView,
 check [**NotchToolbar Options**](#notchtoolbar-options) and [**More Options**](#more-options) for more details.
 
 ## Example Project
