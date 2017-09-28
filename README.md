@@ -6,20 +6,20 @@ Inspired by <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="l
 ![Demo](preview.gif)
 
 ## Compatibility
-Although `NotchToolkit` is made for iPhone X; however, it can be implemented in older iPhone devices. This framwork was tested on:
+Although `NotchToolkit` is made for iPhone X, it can be implemented in older iPhone devices. This framework was tested on:
 
 1. iPhone X
 2. iPhone 8 plus, 7 plus, 6s plus and 6 plus
 3. iPhone 8, 7, 6s and 6
 4. iPhone SE and 5s
 
-`NothcToolkit` requires
+`NotchToolkit` requires
 
 - iOS 11
 - Swift 3.2 or higher
 
-The `NotchToolbar` has options that allow you change
-`background color, height, toolList icons Edge Inset, modes for statusBar & noStatusBar...etc.`
+ `NotchToolbar` has options that allow you to change
+`background color, height, icons... etc.`
 check [**NotchToolbar Options**](#notchtoolbar-options) for more details.
 
 ## Example Project
@@ -49,7 +49,10 @@ $ pod install
 
 ## Implement in your project
 1. `import NotchToolkit` in a UIViewController class
-2. Add `NotchToolbarDelegate` in the delegate/protocol section
+2. Add `NotchToolbarDelegate` in the delegate section
+```
+class ViewController: UIViewController, NotchToolbarDelegate
+```
 3. Add delegate functions
 ```
 func deviceDidRotate() {
@@ -63,11 +66,11 @@ let toolbar = NotchToolbar()
 ```
 5. Set options and initialize in `viewDidLoad`
 ```
-toolbar.notch.isVisible = false
+toolbar.notch.isVisible = true
 
 toolbar.notch.height = 250
 
-toolbar.toolList = ["🤔", "🤓", "📱", "👩‍💻", "👨‍💻", "✅", UIImage(named:"pikachusquare"), "🔥"]
+toolbar.toolList = ["🤔", "🤓", "📱", "👩‍💻", "👨‍💻", "✅", UIImage(named:"IMG_NAME"), "🔥"]
 
 toolbar.delegate = self
 toolbar.initializeToolbar(self)
@@ -100,12 +103,12 @@ This allows you to set the tool icon size. Default is 60x60
 CGSize(width:w, height:h)
 ```
 #### toolbar.toolIconsInsets
-This allows you to customize the collection view edge insets.
+This allows you to customize the tool icons edge insets.
 ```
 UIEdgeInsetsMake(top,left,bottom,right)
 ```
 #### toolbar.toolList
-This is the array of the tool icons in the NotchToolbar. You may only use String & UIImage types.
+This is the array of the tool icons in the NotchToolbar. toolList only accepts String and UIImage types.
 ```
 [String, UIImage, UIImage, String, String]
 ```
@@ -115,55 +118,55 @@ This allows you to customize the `String` type icon font.
 UIFont(name:FontName, size:FontSize)
 ```
 #### toolbar.toolsTitleColor
-This allows you to customize the `String` type icon color.
+This allows you to customize the `String` type icon text color.
 ```
 UIColor.COLOR_NAME_OR_RGB
 ```
 #### toolbar.notch
-This provides you options to customize NotchBar.
+This provides you options to customize `NotchBar`.
 ##### toolbar.notch.mode
-This allows you to choose between statusBar & noStatusBar modes.
+This allows you to choose between `statusBar` and `noStatusBar` modes.
 ```
 .statusBar - sets the bar width to the iPhone's X notch width.
-.noStatusBar - sets the bar width 30% more than iPhone's X notch width. Recommended for fully landsape apps or when status bar is hidden.
+.noStatusBar - sets the bar width 30% more than iPhone's X notch width. Recommended for fully landscape apps or when status bar is hidden.
 ```
 ##### toolbar.notch.height
-This allows you to set the height of the NotchBar.
+This allows you to set the height of the `NotchBar`.
 ```
 CGFloat(A_NUMBER)
 ```
 ##### toolbar.notch.bgColor
-This allows you to set the background color of the NotchBar.
+This allows you to set the background color of the `NotchBar`.
 ```
 UIColor.COLOR_NAME_OR_RGB
 ```
 ##### toolbar.notch.curve
-This allows you to set the corner radii of the NotchBar.
+This allows you to set the corner radii of the `NotchBar`.
 ```
 CGFloat(A_NUMBER)
 ```
 ##### toolbar.notch.isVisible
-This allows you to initially set the NotchBar visibility. Default is false
+This allows you to initially set the `NotchBar` visibility. Default is false
 ```
 true
 false
 ```
 ##### toolbar.notch.animationInterval
-This allows you to set the animation show/hide & rotation animation time interval of the NotchBar. Default is 0.3.
+This allows you to set the animation time interval of the `NotchBar`. Default is 0.3.
 ```
 TimeInterval(INTERVAL)
 ```
 ## NotchToolbar Functions
 #### initializeToolbar(_ vc:UIViewController)
-This function is required to initialize the NotchToolbar. It is recommended to call this function in `viewDidLoad` after setting the `NotchToolbar` options.
+This function is required to initialize the NotchToolbar. It is recommended to call this function in `viewDidLoad` after setting the [NotchToolbar Options](#notchtoolbar-options).
 ```
-/*
-NotchToolbar Options here
-*/
+    /*
+        NotchToolbar Options here
+    */
     toolbar.initializeToolbar(self)
 ```
 #### showOrHide()
-This function allows you to show and hide the NotchToolbar. You can call this function in the method that handles showing/hiding the toolbar.
+This function allows you to show and hide the `NotchToolbar`. You can call this function in the method that handles showing/hiding the toolbar.
 ```
 @IBAction func buttonClicked(_ sender: UIButton) {
     toolbar.showOrHide()
@@ -172,7 +175,7 @@ This function allows you to show and hide the NotchToolbar. You can call this fu
 
 ## NotchToolbar Delegate Functions
 #### deviceDidRotate()
-This delegate function detects when the device orientation changes. Calling **toolbar.autoResize()** function inside this delegate is **required**.
+This delegate function detects when the device orientation changes. Calling **toolbar.autoResize()** function inside this delegate is **required** in order to have the `NotchToolbar` working properly.
 ```
 func deviceDidRotate() {
     toolbar.autoResize()
@@ -189,9 +192,9 @@ func didTapToolIcon(_ tools: UICollectionView, toolIndex: IndexPath, section: In
 }
 ```
 ## More Options
-This framework include a `UIView` extension that allows you draw a notch bezier path to any `UIView` class/subclass.
+This framework include a `UIView` extension that allows you draw a notch bezier path to any `UIView` class or subclass.
 ### addOvalOrCorner(type:curveType, position:curvePosition, curve:CGFloat?, customBounds:CGRect? = nil)
-This is a UIView extension that allows you add ovals and rounded corners to a UIView.
+This is a UIView extension that allows you add ovals and rounded corners to any UIView.
 
 - For type `oval`, set `curve` from 1.0 - 10.0.
 - For type `corner`, `curve` is the radius size.
@@ -204,4 +207,4 @@ This is a UIView extension that allows you add ovals and rounded corners to a UI
 ![Demo](c&o.gif)
 
 ## LICENSE
-NotchToolkit is under MIT license. Check the [LICENSE](LICENSE) file for more details.
+`NotchToolkit` is under MIT license. Check the [LICENSE](LICENSE) file for more details.
