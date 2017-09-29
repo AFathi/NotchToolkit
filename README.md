@@ -24,7 +24,8 @@ check [**NotchToolbar Options**](#notchtoolbar-options) and [**More Options**](#
 ## Example Project
 To try the example project, simply download this repo then open `NotchToolkit-Example.xcworkspace` project file.
 
-## Install using CocoaPods
+## Installation
+### CocoaPods
 1. Download [CocoaPods](http://cocoapods.org) using this command in `Terminal`
 ```
 $ sudo gem install cocoapods
@@ -45,6 +46,8 @@ pod 'NotchToolkit'
 ```
 $ pod install
 ```
+### Manual
+Add the `NotchToolkit` project to your project and add `NotchToolkit` as an embedded binary of your targets.
 
 ## Implement in your project
 1. `import NotchToolkit` in a UIViewController class
@@ -69,7 +72,7 @@ toolbar.notch.isVisible = true
 
 toolbar.notch.height = 250
 
-toolbar.toolList = ["🤔", "🤓", "📱", "👩‍💻", "👨‍💻", "✅", UIImage(named:"IMG_NAME"), "🔥"]
+toolbar.toolList = [[UIImage(named:"pikachusquare")!, "Pikachu"], [UIImage(named:"spongebob")!, "Spongebob"], "🤔", "🤓", "📱", "👩‍💻", "👨‍💻", "✅", "🔥"]
 
 toolbar.delegate = self
 toolbar.initializeToolbar(self)
@@ -107,9 +110,9 @@ This allows you to customize the tool icons edge insets.
 UIEdgeInsetsMake(top,left,bottom,right)
 ```
 #### toolbar.toolList
-This is the array of the tool icons in the NotchToolbar. toolList only accepts String and UIImage types.
+This is the array of the tool icons in the NotchToolbar. toolList accepts `String` , `UIImage` or an array of both types. An array that contains a  `String` and a `UIImage` allow you to add an image icon with title.
 ```
-[String, UIImage, UIImage, String, String]
+[String, [UIImage, String], [UIImage, String], UIImage, UIImage, String, String]
 ```
 #### toolbar.toolsTitleFont
 This allows you to customize the `String` type icon font.

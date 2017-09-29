@@ -1,6 +1,0 @@
-framework module NotchToolkit {
-  umbrella header "NotchToolkit-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -48,17 +48,28 @@ public class NotchToolbar: NSObject, UICollectionViewDataSource, UICollectionVie
      */
     public var toolIconsInsets:UIEdgeInsets = UIEdgeInsetsMake(5, 35, 5, 35)
     /**
-     This is the array of the tool icons in the NotchToolbar. You may only use String & UIImage types.
+     This is the array of the tool icons in the NotchToolbar. You may use String, UIImage, or an array of both types.
      */
     public var toolList:[Any?] = ["🤓", "😊", "🙄", "👩‍🔬", "👨‍💻"]
     /**
      This allows you to customize the tools title font.
      */
     public var toolsTitleFont:UIFont = UIFont(name:"Avenir-Medium", size: 45)!
+    
+    /**
+     This allows you to customize the tools image icon with title font.
+     */
+    public var iconWithNameFont:UIFont = UIFont(name:"Avenir-Medium", size: 12)!
+    
     /**
      This allows you to customize the tools title color.
      */
     public var toolsTitleColor:UIColor = .white
+    
+    /**
+     This allows you to customize the tools image icon with title color.
+     */
+    public var iconWithNameColor:UIColor = .white
     
     public var recentOrientation: deviceOrientation!
 
@@ -83,6 +94,7 @@ public class NotchToolbar: NSObject, UICollectionViewDataSource, UICollectionVie
             recentOrientation = .portrait
             tools = UICollectionView(frame: CGRect(x:0, y:0, width:notch.bounds.width, height:notch.bounds.height), collectionViewLayout: toolsFlow)
             tools?.register(NotchToolCell.self, forCellWithReuseIdentifier: "toolCell")
+            tools?.register(NotchToolNameIconCell.self, forCellWithReuseIdentifier: "toolIconNameCell")
             tools?.delegate = self
             tools?.dataSource = self
             tools?.contentOffset = CGPoint(x: 0, y: 0)
@@ -189,14 +201,28 @@ extension NotchToolbar {
     }
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell:NotchToolCell = collectionView.dequeueReusableCell(withReuseIdentifier: "toolCell", for: indexPath as IndexPath) as! NotchToolCell
-        if let text = toolList[indexPath.row] as? String {
-            cell.setTitle(text, font: toolsTitleFont, color: toolsTitleColor)
-        }else if let image = toolList[indexPath.row] as? UIImage {
-            cell.setIcon(image)
+        if let iconMultiple = toolList[indexPath.row] as? [Any] {
+            let cell:NotchToolNameIconCell = collectionView.dequeueReusableCell(withReuseIdentifier: "toolIconNameCell", for: indexPath as IndexPath) as! NotchToolNameIconCell
+            
+            let extractedStrings = iconMultiple.filter{if let _ = $0 as? String{return true} else {return false}}
+            let extractedImages = iconMultiple.filter{if let _ = $0 as? UIImage{return true} else {return false}}
+            
+            if let text = extractedStrings[0] as? String {
+                if let image = extractedImages[0] as? UIImage {
+                    cell.set(image, text: text, font: iconWithNameFont, color: toolsTitleColor, type: .both)
+                }
+            }
+            return cell
+        }else{
+            let cell:NotchToolCell = collectionView.dequeueReusableCell(withReuseIdentifier: "toolCell", for: indexPath as IndexPath) as! NotchToolCell
+            
+            if let text = toolList[indexPath.row] as? String {
+                cell.setTitle(text, font: toolsTitleFont, color: toolsTitleColor)
+            }else if let image = toolList[indexPath.row] as? UIImage {
+                cell.setIcon(image)
+            }
+            return cell
         }
-
-        return cell
     }
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

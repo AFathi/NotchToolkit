@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB59EC771F7DC12700BD6B01 /* NotchToolNameIconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB59EC761F7DC12700BD6B01 /* NotchToolNameIconCell.swift */; };
+		FB59EC791F7DC1B400BD6B01 /* ToolIconTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB59EC781F7DC1B400BD6B01 /* ToolIconTypes.swift */; };
 		FBB4BF1D1F79EC77001992BA /* NotchToolkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB4BF131F79EC77001992BA /* NotchToolkit.framework */; };
 		FBB4BF221F79EC77001992BA /* NotchToolkitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB4BF211F79EC77001992BA /* NotchToolkitTests.swift */; };
 		FBB4BF241F79EC77001992BA /* NotchToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = FBB4BF161F79EC77001992BA /* NotchToolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB59EC761F7DC12700BD6B01 /* NotchToolNameIconCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchToolNameIconCell.swift; sourceTree = "<group>"; };
+		FB59EC781F7DC1B400BD6B01 /* ToolIconTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolIconTypes.swift; sourceTree = "<group>"; };
 		FBB4BF131F79EC77001992BA /* NotchToolkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NotchToolkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB4BF161F79EC77001992BA /* NotchToolkit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotchToolkit.h; sourceTree = "<group>"; };
 		FBB4BF171F79EC77001992BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -126,6 +130,7 @@
 				FBB4BF2E1F79ECBC001992BA /* DeviceOrientation.swift */,
 				FBB4BF371F79ECBC001992BA /* NotchMode.swift */,
 				FBB4BF331F79ECBC001992BA /* NotchScroll.swift */,
+				FB59EC781F7DC1B400BD6B01 /* ToolIconTypes.swift */,
 			);
 			path = Enumerators;
 			sourceTree = "<group>";
@@ -142,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				FBB4BF311F79ECBC001992BA /* NotchToolCell.swift */,
+				FB59EC761F7DC12700BD6B01 /* NotchToolNameIconCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -269,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB59EC791F7DC1B400BD6B01 /* ToolIconTypes.swift in Sources */,
 				FBB4BF3C1F79ECBC001992BA /* UIScreen+NotchFrame.swift in Sources */,
 				FBB4BF431F79ECBC001992BA /* NotchMode.swift in Sources */,
 				FBB4BF3F1F79ECBC001992BA /* NotchScroll.swift in Sources */,
@@ -280,6 +287,7 @@
 				FBB4BF3B1F79ECBC001992BA /* NotchToolbarDelegate.swift in Sources */,
 				FBB4BF391F79ECBC001992BA /* CurveSettings.swift in Sources */,
 				FBB4BF3D1F79ECBC001992BA /* NotchToolCell.swift in Sources */,
+				FB59EC771F7DC12700BD6B01 /* NotchToolNameIconCell.swift in Sources */,
 				FBB4BF401F79ECBC001992BA /* UIScreen+iPhone10.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

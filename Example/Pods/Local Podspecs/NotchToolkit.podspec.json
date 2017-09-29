@@ -1,0 +1,27 @@
+{
+  "name": "NotchToolkit",
+  "version": "1.0",
+  "summary": "A light-weight iOS framework for iPhone's X notch.",
+  "description": "A light-weight framework for iOS that allow developers use the iPhone's X notch space in creative ways.",
+  "homepage": "http://github.com/AFathi",
+  "screenshots": "https://im3.ezgif.com/tmp/ezgif-3-bd73dd3458.gif",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "AFathi": "me@ahmedbekhit.com"
+  },
+  "social_media_url": "http://twitter.com/AFathi",
+  "platforms": {
+    "ios": "11.0"
+  },
+  "source": {
+    "git": "https://github.com/AFathi/NotchToolkit.git",
+    "tag": "1.0"
+  },
+  "source_files": [
+    "NotchToolkit",
+    "NotchToolkit/**/*.{h,m,swift}"
+  ]
+}
