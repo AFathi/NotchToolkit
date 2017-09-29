@@ -18,7 +18,7 @@ Although `NotchToolkit` is made for iPhone X, it can be implemented in older iPh
 - iOS 11
 - Swift 3.2 or higher
 
- `NotchToolkit` has options to customize your Toolbar and UIView,
+`NotchToolkit` has options to customize your Toolbar and UIView,
 check [**NotchToolbar Options**](#notchtoolbar-options) and [**More Options**](#more-options) for more details.
 
 ## Example Project
@@ -80,7 +80,7 @@ toolbar.initializeToolbar(self)
 6. Call .autoResize() function in the `deviceDidRotate` delegate function
 ```
 func deviceDidRotate() {
-    toolbar.autoResize()
+toolbar.autoResize()
 }
 ```
 You're all set!
@@ -124,6 +124,16 @@ This allows you to customize the `String` type icon text color.
 ```
 UIColor.COLOR_NAME_OR_RGB
 ```
+#### toolbar.iconWithNameFont
+This allows you to customize the tools title font.
+```
+UIFont(name:FontName, size:FontSize)
+```
+#### toolbar.iconWithNameColor
+This allows you to customize the tools  title color.
+```
+UIColor.COLOR_NAME_OR_RGB
+```
 #### toolbar.notch
 This provides you options to customize `NotchBar`.
 ##### toolbar.notch.mode
@@ -162,16 +172,16 @@ TimeInterval(INTERVAL)
 #### initializeToolbar(_ vc:UIViewController)
 This function is required to initialize the NotchToolbar. It is recommended to call this function in `viewDidLoad` after setting the [NotchToolbar Options](#notchtoolbar-options).
 ```
-    /*
-        NotchToolbar Options here
-    */
-    toolbar.initializeToolbar(self)
+/*
+NotchToolbar Options here
+*/
+toolbar.initializeToolbar(self)
 ```
 #### showOrHide()
 This function allows you to show and hide the `NotchToolbar`. You can call this function in the method that handles showing/hiding the toolbar.
 ```
 @IBAction func buttonClicked(_ sender: UIButton) {
-    toolbar.showOrHide()
+toolbar.showOrHide()
 }
 ```
 
@@ -180,17 +190,17 @@ This function allows you to show and hide the `NotchToolbar`. You can call this 
 This delegate function detects when the device orientation changes. Calling **toolbar.autoResize()** function inside this delegate is **required** in order to have the `NotchToolbar` working properly.
 ```
 func deviceDidRotate() {
-    toolbar.autoResize()
+toolbar.autoResize()
 }
 ```
 #### didTapToolIcon(_ tools: UICollectionView, toolIndex:IndexPath, section: Int, row: Int)
 This delegate function allows you to detect which toolbar icon was selected.
 ```
 func didTapToolIcon(_ tools: UICollectionView, toolIndex: IndexPath, section: Int, row: Int) {
-    let alert = UIAlertController(title: "NotchToolkit Alert", message: iconListTest[row], preferredStyle: UIAlertControllerStyle.alert)
-    alert.addAction(UIAlertAction(title: "k", style: UIAlertActionStyle.cancel, handler: {(UIAlertAction)in
-    }))
-    self.present(alert, animated: true, completion: nil)
+let alert = UIAlertController(title: "NotchToolkit Alert", message: iconListTest[row], preferredStyle: UIAlertControllerStyle.alert)
+alert.addAction(UIAlertAction(title: "k", style: UIAlertActionStyle.cancel, handler: {(UIAlertAction)in
+}))
+self.present(alert, animated: true, completion: nil)
 }
 ```
 ## More Options
@@ -203,10 +213,11 @@ This is a UIView extension that allows you add ovals and rounded corners to any 
 - Check `curveType` & `curvePosition` for more info.
 ### Example
 ```
-    myView.addOvalOrCorner(type: .oval, position: .horizontalSides, curve: 1.5)
+myView.addOvalOrCorner(type: .oval, position: .horizontalSides, curve: 1.5)
 ```
 ### Preview
 ![Demo](c&o.gif)
 
 ## LICENSE
 `NotchToolkit` is under MIT license. Check the [LICENSE](LICENSE) file for more details.
+
