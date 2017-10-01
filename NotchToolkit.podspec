@@ -10,8 +10,8 @@ Pod::Spec.new do |s|
   s.screenshots  = "http://whochatme1.ipage.com/preview.gif"
   s.license      = { :type => "MIT", :file => "LICENSE" }
 
-  s.author             = { "AFathi" => "me@ahmedbekhit.com" }
-  s.social_media_url   = "http://twitter.com/AFathi"
+  s.author             = { "Ahmed Bekhit" => "me@ahmedbekhit.com" }
+  s.social_media_url   = "http://twitter.com/iAFapps"
 
   s.platform     = :ios, "11.0"
 
