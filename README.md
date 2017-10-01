@@ -22,7 +22,7 @@ Although `NotchToolkit` is made for iPhone X, it can be implemented in older iPh
 check [**NotchToolbar Options**](#notchtoolbar-options) and [**More Options**](#more-options) for more details.
 
 ## Example Project
-To try the example project, simply download this repo then open `NotchToolkit-Example.xcworkspace` project file.
+To try the example project, simply download this repo then open `NotchToolkit-Example.xcworkspace` project file, found in the `Example` folder.
 
 ## Installation
 ### CocoaPods
@@ -57,8 +57,11 @@ class ViewController: UIViewController, NotchToolbarDelegate
 ```
 3. Add delegate functions
 ```
+//A protocol function that's triggered when the device rotates.
 func deviceDidRotate() {
 }
+
+//A protocol function that's triggered when an icon is selected.
 func didTapToolIcon(_ tools: UICollectionView, toolIndex: IndexPath, section: Int, row: Int) {
 }
 ```
@@ -80,7 +83,7 @@ toolbar.initializeToolbar(self)
 6. Call .autoResize() function in the `deviceDidRotate` delegate function
 ```
 func deviceDidRotate() {
-toolbar.autoResize()
+    toolbar.autoResize()
 }
 ```
 You're all set!
@@ -181,7 +184,7 @@ toolbar.initializeToolbar(self)
 This function allows you to show and hide the `NotchToolbar`. You can call this function in the method that handles showing/hiding the toolbar.
 ```
 @IBAction func buttonClicked(_ sender: UIButton) {
-toolbar.showOrHide()
+    toolbar.showOrHide()
 }
 ```
 
@@ -190,7 +193,7 @@ toolbar.showOrHide()
 This delegate function detects when the device orientation changes. Calling **toolbar.autoResize()** function inside this delegate is **required** in order to have the `NotchToolbar` working properly.
 ```
 func deviceDidRotate() {
-toolbar.autoResize()
+    toolbar.autoResize()
 }
 ```
 #### didTapToolIcon(_ tools: UICollectionView, toolIndex:IndexPath, section: Int, row: Int)
