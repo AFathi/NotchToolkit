@@ -48,11 +48,11 @@ pod 'NotchToolkit'
 $ pod install
 ```
 ### Manual
-Add the `NotchToolkit` project to your project and add `NotchToolkit` as an embedded binary of your targets.
+Drag the `NotchToolkit.xcodeproj` file into your project then add `NotchToolkit` as an embedded binary of your targets.
 
 ## Implement in your project
-1. `import NotchToolkit` in a UIViewController class
-2. Add `NotchToolbarDelegate` in the delegate section
+1. `import NotchToolkit` in a `UIViewController` class
+2. Add [`NotchToolbarDelegate`](https://github.com/AFathi/NotchToolkit/wiki/NotchToolbarDelegate) in the delegate section
 ```
 class ViewController: UIViewController, NotchToolbarDelegate
 ```
@@ -66,11 +66,11 @@ func deviceDidRotate() {
 func didTapToolIcon(_ tools: UICollectionView, toolIndex: IndexPath, section: Int, row: Int) {
 }
 ```
-4. Declare a NotchToolbar variable
+4. Create a [`NotchToolbar`](https://github.com/AFathi/NotchToolkit/wiki/NotchToolbar) variable
 ```
 let toolbar = NotchToolbar()
 ```
-5. Set options and initialize in `viewDidLoad`
+5. Configure `toolbar` in `viewDidLoad`
 ```
 toolbar.notch.isVisible = true
 
@@ -89,7 +89,7 @@ UIImage(named:"spongebob")!,
 toolbar.delegate = self
 toolbar.initializeToolbar(self)
 ```
-6. Call .autoResize() method in the `deviceDidRotate` delegate method
+6. Call [`autoResize()`](https://github.com/AFathi/NotchToolkit/wiki/NotchToolbar#func-autoresize) method in the [`deviceDidRotate`](https://github.com/AFathi/NotchToolkit/wiki/NotchToolbarDelegate#func-devicedidrotate) delegate method
 ```
 func deviceDidRotate() {
     toolbar.autoResize()
@@ -97,8 +97,8 @@ func deviceDidRotate() {
 ```
 **You're all set! 🤓**
 ## Handle Icon Selection
-1. Make sure you set the `NotchToolbar` delegate to `self`.
-2. Handle the icon selection in this delegate method:
+1. Make sure you set the [`NotchToolbar`](https://github.com/AFathi/NotchToolkit/wiki/NotchToolbar) delegate to `self`.
+2. Handle the icon selection in the [`didTapToolIcon`](https://github.com/AFathi/NotchToolkit/wiki/NotchToolbarDelegate#func-didtaptoolicon_-tools-uicollectionview-toolindexindexpath-section-int-row-int) delegate method:
 ```
 func didTapToolIcon(_ tools: UICollectionView, toolIndex: IndexPath, section: Int, row: Int) {
     if row == 0 {
