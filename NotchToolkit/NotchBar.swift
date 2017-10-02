@@ -57,7 +57,7 @@ public class NotchBar: UIView {
         self.bounds = CGRect(x: 0, y: 0, width: scale, height: height)
         self.center = CGPoint(x: UIScreen.main.portraitNotch.origin.x, y: (self.bounds.height/2))
         self.backgroundColor = bgColor
-        self.addOvalOrCorner(type: .corner, position: .bottom, curve: curve)
+        self.draw(.corner, position: .bottom, curve: curve)
         self.layer.masksToBounds = true
         self.alpha = isVisible ? 1 : 0
     }
@@ -83,7 +83,7 @@ public class NotchBar: UIView {
                 self.bounds = CGRect(x: 0, y: 0, width: self.scale, height: self.height)
                 self.center = CGPoint(x: UIScreen.main.portraitNotch.origin.x, y: (self.bounds.height/2) - subtrehend)
                 self.backgroundColor = self.bgColor
-                self.addOvalOrCorner(type: .corner, position: .bottom, curve: self.curve)
+                self.draw(.corner, position: .bottom, curve: self.curve)
                 self.alpha = self.isVisible ? 1 : 0
             })
         case .landscapeLeft:
@@ -91,7 +91,7 @@ public class NotchBar: UIView {
                 self.bounds = CGRect(x: 0, y: 0, width: self.height, height: self.scale)
                 self.center = CGPoint(x: (self.bounds.height*(self.multiplier*self.height)) - subtrehend, y: UIScreen.main.landscapeLeftNotch.origin.y)
                 self.backgroundColor = self.bgColor
-                self.addOvalOrCorner(type: .corner, position: .right, curve: self.curve)
+                self.draw(.corner, position: .right, curve: self.curve)
                 self.alpha = self.isVisible ? 1 : 0
             })
         case .landscapeRight:
@@ -99,7 +99,7 @@ public class NotchBar: UIView {
                 self.bounds = CGRect(x: 0, y: 0, width: self.height, height: self.scale)
                 self.center = CGPoint(x: (UIScreen.main.bounds.width-self.bounds.height*(self.multiplier*self.height)) + subtrehend, y: UIScreen.main.landscapeRightNotch.origin.y)
                 self.backgroundColor = self.bgColor
-                self.addOvalOrCorner(type: .corner, position: .left, curve: self.curve)
+                self.draw(.corner, position: .left, curve: self.curve)
                 self.alpha = self.isVisible ? 1 : 0
             })
         }

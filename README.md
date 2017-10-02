@@ -1,5 +1,5 @@
 # NotchToolkit
-NotchToolkit is a light-weight framework for iOS that allow developers use the iPhone's X notch space in creative ways.
+NotchToolkit is a framework for iOS that allow developers use the iPhone X notch space in creative ways.
 Inspired by <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I was working on this idea of blending app design with the <a href="https://twitter.com/hashtag/iPhoneX?src=hash">#iPhoneX</a> notch. 📲🤗 <a href="https://t.co/lj2AhxWNeE">pic.twitter.com/lj2AhxWNeE</a></p>&mdash; Luboš Volkov⚡️ (@0therPlanet) <a href="https://twitter.com/0therPlanet/status/909788913702785026">September 18, 2017</a></blockquote>
 
 ## Preview
@@ -55,7 +55,7 @@ Add the `NotchToolkit` project to your project and add `NotchToolkit` as an embe
 ```
 class ViewController: UIViewController, NotchToolbarDelegate
 ```
-3. Add delegate functions
+3. Add delegate methods
 ```
 //A protocol function that's triggered when the device rotates.
 func deviceDidRotate() {
@@ -75,7 +75,15 @@ toolbar.notch.isVisible = true
 
 toolbar.notch.height = 250
 
-toolbar.toolList = [[UIImage(named:"pikachusquare")!, "Pikachu"], [UIImage(named:"spongebob")!, "Spongebob"], "🤔", "🤓", "📱", "👩‍💻", "👨‍💻", "✅", "🔥"]
+toolbar.toolList = [
+//[icon image, title]
+[UIImage(named:"pikachusquare")!, "Pikachu"],
+//only image icons
+UIImage(named:"spongebob")!,
+//only string icons (mainly for emojis 😉)
+"🤔", "🤓",
+"📱", "👩‍💻",
+"👨‍💻", "✅", "🔥"]
 
 toolbar.delegate = self
 toolbar.initializeToolbar(self)
@@ -86,7 +94,7 @@ func deviceDidRotate() {
     toolbar.autoResize()
 }
 ```
-You're all set!
+**You're all set! 🤓**
 
 ## NotchToolbar Options
 #### toolbar.scrollMode
@@ -188,16 +196,16 @@ This function allows you to show and hide the `NotchToolbar`. You can call this 
 }
 ```
 
-## NotchToolbar Delegate Functions
+## NotchToolbar Delegate Methods
 #### deviceDidRotate()
-This delegate function detects when the device orientation changes. Calling **toolbar.autoResize()** function inside this delegate is **required** in order to have the `NotchToolbar` working properly.
+This delegate method detects when the device orientation changes. Calling **toolbar.autoResize()** function inside this delegate is **required** in order to have the `NotchToolbar` working properly.
 ```
 func deviceDidRotate() {
     toolbar.autoResize()
 }
 ```
 #### didTapToolIcon(_ tools: UICollectionView, toolIndex:IndexPath, section: Int, row: Int)
-This delegate function allows you to detect which toolbar icon was selected.
+This delegate method allows you to detect which toolbar icon was selected.
 ```
 func didTapToolIcon(_ tools: UICollectionView, toolIndex: IndexPath, section: Int, row: Int) {
 let alert = UIAlertController(title: "NotchToolkit Alert", message: iconListTest[row], preferredStyle: UIAlertControllerStyle.alert)
@@ -207,19 +215,24 @@ self.present(alert, animated: true, completion: nil)
 }
 ```
 ## More Options
-This framework include a `UIView` extension that allows you draw a notch bezier path to any `UIView` class or subclass.
-### addOvalOrCorner(type:curveType, position:curvePosition, curve:CGFloat?, customBounds:CGRect? = nil)
+This framework include a `UIView` extension that allow you draw a notch bezier path to any `UIView` class or subclass.
+### draw(_ notch:curveType, position:curvePosition, curve:CGFloat?, customBounds:CGRect? = nil)
 This is a UIView extension that allows you add ovals and rounded corners to any UIView.
 
-- For type `oval`, set `curve` from 1.0 - 10.0.
+- For type `oval`, set `curve` scale from 1.0 - 10.0.
 - For type `corner`, `curve` is the radius size.
 - Check `curveType` & `curvePosition` for more info.
 ### Example
 ```
-myView.addOvalOrCorner(type: .oval, position: .horizontalSides, curve: 1.5)
+//horizontalSides draws an oval-based bezier path vertically on the right & left sides of a view.
+myView.draw(.oval, position: .horizontalSides, curve: 1.5)
+
+//diagonalAC draws rounded rectangle corners diagonally from topLeft to bottomRight of a view.
+myView.draw(.corner, position: .diagonalAC, curve: 35)
+
 ```
 ### Preview
-![Demo](c&o.gif)
+![Demo](drawNotch.gif)
 
 ## LICENSE
 `NotchToolkit` is under MIT license. Check the [LICENSE](LICENSE) file for more details.

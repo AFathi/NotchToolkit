@@ -21,7 +21,7 @@
 		FBB4BF3F1F79ECBC001992BA /* NotchScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB4BF331F79ECBC001992BA /* NotchScroll.swift */; };
 		FBB4BF401F79ECBC001992BA /* UIScreen+iPhone10.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB4BF341F79ECBC001992BA /* UIScreen+iPhone10.swift */; };
 		FBB4BF411F79ECBC001992BA /* UIScreen+NotchPositionMultiplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB4BF351F79ECBC001992BA /* UIScreen+NotchPositionMultiplier.swift */; };
-		FBB4BF421F79ECBC001992BA /* UIView+OvalOrCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB4BF361F79ECBC001992BA /* UIView+OvalOrCorners.swift */; };
+		FBB4BF421F79ECBC001992BA /* UIView+DrawNotch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB4BF361F79ECBC001992BA /* UIView+DrawNotch.swift */; };
 		FBB4BF431F79ECBC001992BA /* NotchMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB4BF371F79ECBC001992BA /* NotchMode.swift */; };
 		FBB4BF441F79ECBC001992BA /* NotchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB4BF381F79ECBC001992BA /* NotchBar.swift */; };
 		FBB4BF861F79F546001992BA /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = FBB4BF851F79F546001992BA /* LICENSE */; };
@@ -55,7 +55,7 @@
 		FBB4BF331F79ECBC001992BA /* NotchScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchScroll.swift; sourceTree = "<group>"; };
 		FBB4BF341F79ECBC001992BA /* UIScreen+iPhone10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+iPhone10.swift"; sourceTree = "<group>"; };
 		FBB4BF351F79ECBC001992BA /* UIScreen+NotchPositionMultiplier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+NotchPositionMultiplier.swift"; sourceTree = "<group>"; };
-		FBB4BF361F79ECBC001992BA /* UIView+OvalOrCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+OvalOrCorners.swift"; sourceTree = "<group>"; };
+		FBB4BF361F79ECBC001992BA /* UIView+DrawNotch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+DrawNotch.swift"; sourceTree = "<group>"; };
 		FBB4BF371F79ECBC001992BA /* NotchMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchMode.swift; sourceTree = "<group>"; };
 		FBB4BF381F79ECBC001992BA /* NotchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchBar.swift; sourceTree = "<group>"; };
 		FBB4BF851F79F546001992BA /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 				FBB4BF321F79ECBC001992BA /* NotchToolbar.swift */,
 				FBB4BF381F79ECBC001992BA /* NotchBar.swift */,
 				FBB4BF731F79EDA4001992BA /* Cells */,
-				FBB4BF711F79ED8F001992BA /* Enumerators */,
+				FBB4BF711F79ED8F001992BA /* Enumerations */,
 				FBB4BF741F79EDB2001992BA /* Extensions */,
 				FBB4BF721F79ED9B001992BA /* Protocols */,
 				FBB4BF161F79EC77001992BA /* NotchToolkit.h */,
@@ -123,7 +123,7 @@
 			path = NotchToolkitTests;
 			sourceTree = "<group>";
 		};
-		FBB4BF711F79ED8F001992BA /* Enumerators */ = {
+		FBB4BF711F79ED8F001992BA /* Enumerations */ = {
 			isa = PBXGroup;
 			children = (
 				FBB4BF2D1F79ECBC001992BA /* CurveSettings.swift */,
@@ -132,7 +132,7 @@
 				FBB4BF331F79ECBC001992BA /* NotchScroll.swift */,
 				FB59EC781F7DC1B400BD6B01 /* ToolIconTypes.swift */,
 			);
-			path = Enumerators;
+			path = Enumerations;
 			sourceTree = "<group>";
 		};
 		FBB4BF721F79ED9B001992BA /* Protocols */ = {
@@ -158,7 +158,7 @@
 				FBB4BF341F79ECBC001992BA /* UIScreen+iPhone10.swift */,
 				FBB4BF301F79ECBC001992BA /* UIScreen+NotchFrame.swift */,
 				FBB4BF351F79ECBC001992BA /* UIScreen+NotchPositionMultiplier.swift */,
-				FBB4BF361F79ECBC001992BA /* UIView+OvalOrCorners.swift */,
+				FBB4BF361F79ECBC001992BA /* UIView+DrawNotch.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -279,7 +279,7 @@
 				FBB4BF3C1F79ECBC001992BA /* UIScreen+NotchFrame.swift in Sources */,
 				FBB4BF431F79ECBC001992BA /* NotchMode.swift in Sources */,
 				FBB4BF3F1F79ECBC001992BA /* NotchScroll.swift in Sources */,
-				FBB4BF421F79ECBC001992BA /* UIView+OvalOrCorners.swift in Sources */,
+				FBB4BF421F79ECBC001992BA /* UIView+DrawNotch.swift in Sources */,
 				FBB4BF3A1F79ECBC001992BA /* DeviceOrientation.swift in Sources */,
 				FBB4BF3E1F79ECBC001992BA /* NotchToolbar.swift in Sources */,
 				FBB4BF441F79ECBC001992BA /* NotchBar.swift in Sources */,

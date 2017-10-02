@@ -24,32 +24,36 @@ class CornerOvalViewController: UIViewController {
     
     @IBAction func drawOval(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0 {
-           aView.addOvalOrCorner(type: .oval, position: .right, curve: 1.5)
+           aView.draw(.oval, position: .right, curve: 1.5)
         }else if sender.selectedSegmentIndex == 1 {
-            aView.addOvalOrCorner(type: .oval, position: .left, curve: 1.5)
+            aView.draw(.oval, position: .left, curve: 1.5)
         }else if sender.selectedSegmentIndex == 2 {
-            aView.addOvalOrCorner(type: .oval, position: .top, curve: 1.5)
+            aView.draw(.oval, position: .top, curve: 1.5)
         }else if sender.selectedSegmentIndex == 3 {
-            aView.addOvalOrCorner(type: .oval, position: .bottom, curve: 1.5)
+            aView.draw(.oval, position: .bottom, curve: 1.5)
         }else if sender.selectedSegmentIndex == 4 {
-            aView.addOvalOrCorner(type: .oval, position: .horizontalSides, curve: 1.5)
+            aView.draw(.oval, position: .horizontalSides, curve: 1.5)
         }else if sender.selectedSegmentIndex == 5 {
-            aView.addOvalOrCorner(type: .oval, position: .verticalSides, curve: 1.5)
+            aView.draw(.oval, position: .verticalSides, curve: 1.5)
         }else if sender.selectedSegmentIndex == 6 {
-            aView.addOvalOrCorner(type: .oval, position: .all, curve: 1.5)
+            aView.draw(.oval, position: .all, curve: 1.5)
         }
     }
     @IBAction func drawCorner(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0 {
-            aView.addOvalOrCorner(type: .corner, position: .right, curve: 35)
+            aView.draw(.corner, position: .right, curve: 35)
         }else if sender.selectedSegmentIndex == 1 {
-            aView.addOvalOrCorner(type: .corner, position: .left, curve: 35)
+            aView.draw(.corner, position: .left, curve: 35)
         }else if sender.selectedSegmentIndex == 2 {
-            aView.addOvalOrCorner(type: .corner, position: .top, curve: 35)
+            aView.draw(.corner, position: .top, curve: 35)
         }else if sender.selectedSegmentIndex == 3 {
-            aView.addOvalOrCorner(type: .corner, position: .bottom, curve: 35)
+            aView.draw(.corner, position: .bottom, curve: 35)
         }else if sender.selectedSegmentIndex == 4 {
-            aView.addOvalOrCorner(type: .corner, position: .all, curve: 35)
+            aView.draw(.corner, position: .diagonalAC, curve: 35)
+        }else if sender.selectedSegmentIndex == 5 {
+            aView.draw(.corner, position: .diagonalBD, curve: 35)
+        }else if sender.selectedSegmentIndex == 6 {
+            aView.draw(.corner, position: .all, curve: 35)
         }
     }
     

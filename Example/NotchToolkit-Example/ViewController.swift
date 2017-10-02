@@ -9,7 +9,7 @@
 import UIKit
 import NotchToolkit
 
-// MARK: Tool Icons Arrays
+// MARK: - Tool Icons Arrays
 extension ViewController {
     /**
      This is a custom array used to show more info when an icon is tapped
@@ -32,6 +32,8 @@ extension ViewController {
             "🔥"]
     }
 }
+
+// MARK: - Implement NotchToolkit
 
 //Step 1. add `NotchToolbarDelegate`
 //Step 2. implement delegate functions, check NotchToolkit Delegates
@@ -64,7 +66,7 @@ class ViewController: UIViewController {
     }
 }
 
-// MARK: - NotchToolkit Delegates
+// MARK: - NotchToolkit Delegate Methods
 extension ViewController: NotchToolbarDelegate {
     func deviceDidRotate() {
         //Step 5. call `autoResize` in the `deviceDidRotate` function
