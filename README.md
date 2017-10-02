@@ -70,7 +70,7 @@ func didTapToolIcon(_ tools: UICollectionView, toolIndex: IndexPath, section: In
 ```
 let toolbar = NotchToolbar()
 ```
-5. Configure `toolbar` in `viewDidLoad`
+5. Configure and initialize `toolbar` in `viewDidLoad`
 ```
 toolbar.notch.isVisible = true
 
@@ -96,6 +96,14 @@ func deviceDidRotate() {
 }
 ```
 **You're all set! 🤓**
+## Show and Hide `toolbar`
+### [showOrHide()](https://github.com/AFathi/NotchToolkit/wiki/NotchToolbar#func-showorhide)
+This method allows you to show and hide the `NotchToolbar`. You can call this method in an `IBAction` that handles showing/hiding the toolbar.
+```
+@IBAction func buttonClicked(_ sender: UIButton) {
+    toolbar.showOrHide()
+}
+```
 ## Handle Icon Selection
 1. Make sure you set the [`NotchToolbar`](https://github.com/AFathi/NotchToolkit/wiki/NotchToolbar) delegate to `self`.
 2. Handle the icon selection in the [`didTapToolIcon`](https://github.com/AFathi/NotchToolkit/wiki/NotchToolbarDelegate#func-didtaptoolicon_-tools-uicollectionview-toolindexindexpath-section-int-row-int) delegate method:
