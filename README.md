@@ -19,7 +19,8 @@ Although `NotchToolkit` is made for iPhone X, it can be implemented in older iPh
 - Swift 3.2 or higher
 
 `NotchToolkit` has options to customize your Toolbar and UIView,
-check [**NotchToolbar Options**](#notchtoolbar-options) and [**More Options**](#more-options) for more details.
+
+check [**Documentation**](https://github.com/AFathi/NotchToolkit/wiki) and [**More Options**](#more-options) for more details.
 
 ## Example Project
 To try the example project, simply download this repo then open `NotchToolkit-Example.xcworkspace` project file, found in the `Example` folder.
@@ -95,123 +96,16 @@ func deviceDidRotate() {
 }
 ```
 **You're all set! 🤓**
-
-## NotchToolbar Options
-#### toolbar.scrollMode
-This gives you options to change the NotchToolbar scrolling directions. Default is auto.
-```
-.alwaysHorizontal
-.alwaysVertical
-.auto
-```
-#### toolbar.onlyFor10
-This allows you to enable NotchToolbar only for iPhone X. Default is false.
-```
-true
-false
-```
-#### toolbar.toolIconSize
-This allows you to set the tool icon size. Default is 60x60
-```
-CGSize(width:w, height:h)
-```
-#### toolbar.toolIconsInsets
-This allows you to customize the tool icons edge insets.
-```
-UIEdgeInsetsMake(top,left,bottom,right)
-```
-#### toolbar.toolList
-This is the array of the tool icons in the NotchToolbar. toolList accepts `String` , `UIImage` or an array of both types. An array that contains a  `String` and a `UIImage` allow you to add an image icon with title.
-```
-[String, [UIImage, String], [UIImage, String], UIImage, UIImage, String, String]
-```
-#### toolbar.toolsTitleFont
-This allows you to customize the `String` type icon font.
-```
-UIFont(name:FontName, size:FontSize)
-```
-#### toolbar.toolsTitleColor
-This allows you to customize the `String` type icon text color.
-```
-UIColor.COLOR_NAME_OR_RGB
-```
-#### toolbar.iconWithNameFont
-This allows you to customize the tools title font.
-```
-UIFont(name:FontName, size:FontSize)
-```
-#### toolbar.iconWithNameColor
-This allows you to customize the tools  title color.
-```
-UIColor.COLOR_NAME_OR_RGB
-```
-#### toolbar.notch
-This provides you options to customize `NotchBar`.
-##### toolbar.notch.mode
-This allows you to choose between `statusBar` and `noStatusBar` modes.
-```
-.statusBar - sets the bar width to the iPhone's X notch width.
-.noStatusBar - sets the bar width 30% more than iPhone's X notch width. Recommended for fully landscape apps or when status bar is hidden.
-```
-##### toolbar.notch.height
-This allows you to set the height of the `NotchBar`.
-```
-CGFloat(A_NUMBER)
-```
-##### toolbar.notch.bgColor
-This allows you to set the background color of the `NotchBar`.
-```
-UIColor.COLOR_NAME_OR_RGB
-```
-##### toolbar.notch.curve
-This allows you to set the corner radii of the `NotchBar`.
-```
-CGFloat(A_NUMBER)
-```
-##### toolbar.notch.isVisible
-This allows you to initially set the `NotchBar` visibility. Default is false
-```
-true
-false
-```
-##### toolbar.notch.animationInterval
-This allows you to set the animation time interval of the `NotchBar`. Default is 0.3.
-```
-TimeInterval(INTERVAL)
-```
-## NotchToolbar Methods
-#### initializeToolbar(_ vc:UIViewController)
-This method is required to initialize the NotchToolbar. It is recommended to call this method in `viewDidLoad` after setting the [NotchToolbar Options](#notchtoolbar-options).
-```
-/*
-NotchToolbar Options here
-*/
-toolbar.initializeToolbar(self)
-```
-#### showOrHide()
-This method allows you to show and hide the `NotchToolbar`. You can call this method in the method that handles showing/hiding the toolbar.
-```
-@IBAction func buttonClicked(_ sender: UIButton) {
-    toolbar.showOrHide()
-}
-```
-
-## NotchToolbar Delegate Methods
-#### deviceDidRotate()
-This delegate method detects when the device orientation changes. Calling **toolbar.autoResize()** method inside this delegate is **required** in order to have the `NotchToolbar` working properly.
-```
-func deviceDidRotate() {
-    toolbar.autoResize()
-}
-```
-#### didTapToolIcon(_ tools: UICollectionView, toolIndex:IndexPath, section: Int, row: Int)
-This delegate method allows you to detect which toolbar icon was selected.
+## Handle Icon Selection
+1. Make sure you set the `NotchToolbar` delegate to `self`.
+2. Handle the icon selection in this delegate method:
 ```
 func didTapToolIcon(_ tools: UICollectionView, toolIndex: IndexPath, section: Int, row: Int) {
-let alert = UIAlertController(title: "NotchToolkit Alert", message: iconListTest[row], preferredStyle: UIAlertControllerStyle.alert)
-alert.addAction(UIAlertAction(title: "k", style: UIAlertActionStyle.cancel, handler: {(UIAlertAction)in
-}))
-self.present(alert, animated: true, completion: nil)
+    if row == 0 {
+        print("first icon")
+    }else if row == 1 {
+        print("second icon")
+    }
 }
 ```
 ## More Options

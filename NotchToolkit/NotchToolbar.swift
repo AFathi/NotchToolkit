@@ -9,7 +9,7 @@
 import UIKit
 
 /**
- *NotchToolkit* is a light-weight framework for iOS that allow developers use the iPhone's X notch space in creative ways.
+ *NotchToolkit* is a framework for iOS that allow developers use the iPhones X notch space in creative ways.
  
  - Author: Ahmed Fathi Bekhit
  * [Github](http://github.com/AFathi)
@@ -70,10 +70,10 @@ public class NotchToolbar: NSObject, UICollectionViewDataSource, UICollectionVie
      This allows you to customize the tools image icon with title color.
      */
     public var iconWithNameColor:UIColor = .white
-    
-    public var recentOrientation: deviceOrientation!
 
     public var toolsFlow = UICollectionViewFlowLayout()
+
+    private var recentOrientation: deviceOrientation!
 
     /**
      This function is required to initialize the NotchToolbar.
@@ -114,7 +114,7 @@ public class NotchToolbar: NSObject, UICollectionViewDataSource, UICollectionVie
     }
 }
 
-//MARK:- NotchToolbarDelegates
+//MARK:- Methods and Delegates
 extension NotchToolbar {
     /**
      This function is required to be called from the `deviceDidRotate` delegate function.
