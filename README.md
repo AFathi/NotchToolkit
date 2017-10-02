@@ -66,7 +66,7 @@ func deviceDidRotate() {
 func didTapToolIcon(_ tools: UICollectionView, toolIndex: IndexPath, section: Int, row: Int) {
 }
 ```
-4. Create a [`NotchToolbar`](https://github.com/AFathi/NotchToolkit/wiki/NotchToolbar) variable
+4. Create a [`NotchToolbar`](https://github.com/AFathi/NotchToolkit/wiki/NotchToolbar) global variable
 ```
 let toolbar = NotchToolbar()
 ```
