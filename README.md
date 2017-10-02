@@ -57,11 +57,11 @@ class ViewController: UIViewController, NotchToolbarDelegate
 ```
 3. Add delegate methods
 ```
-//A protocol function that's triggered when the device rotates.
+//A protocol method that's triggered when the device rotates.
 func deviceDidRotate() {
 }
 
-//A protocol function that's triggered when an icon is selected.
+//A protocol method that's triggered when an icon is selected.
 func didTapToolIcon(_ tools: UICollectionView, toolIndex: IndexPath, section: Int, row: Int) {
 }
 ```
@@ -88,7 +88,7 @@ UIImage(named:"spongebob")!,
 toolbar.delegate = self
 toolbar.initializeToolbar(self)
 ```
-6. Call .autoResize() function in the `deviceDidRotate` delegate function
+6. Call .autoResize() method in the `deviceDidRotate` delegate method
 ```
 func deviceDidRotate() {
     toolbar.autoResize()
@@ -179,9 +179,9 @@ This allows you to set the animation time interval of the `NotchBar`. Default is
 ```
 TimeInterval(INTERVAL)
 ```
-## NotchToolbar Functions
+## NotchToolbar Methods
 #### initializeToolbar(_ vc:UIViewController)
-This function is required to initialize the NotchToolbar. It is recommended to call this function in `viewDidLoad` after setting the [NotchToolbar Options](#notchtoolbar-options).
+This method is required to initialize the NotchToolbar. It is recommended to call this method in `viewDidLoad` after setting the [NotchToolbar Options](#notchtoolbar-options).
 ```
 /*
 NotchToolbar Options here
@@ -189,7 +189,7 @@ NotchToolbar Options here
 toolbar.initializeToolbar(self)
 ```
 #### showOrHide()
-This function allows you to show and hide the `NotchToolbar`. You can call this function in the method that handles showing/hiding the toolbar.
+This method allows you to show and hide the `NotchToolbar`. You can call this method in the method that handles showing/hiding the toolbar.
 ```
 @IBAction func buttonClicked(_ sender: UIButton) {
     toolbar.showOrHide()
@@ -198,7 +198,7 @@ This function allows you to show and hide the `NotchToolbar`. You can call this 
 
 ## NotchToolbar Delegate Methods
 #### deviceDidRotate()
-This delegate method detects when the device orientation changes. Calling **toolbar.autoResize()** function inside this delegate is **required** in order to have the `NotchToolbar` working properly.
+This delegate method detects when the device orientation changes. Calling **toolbar.autoResize()** method inside this delegate is **required** in order to have the `NotchToolbar` working properly.
 ```
 func deviceDidRotate() {
     toolbar.autoResize()
