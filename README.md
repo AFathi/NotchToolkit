@@ -3,10 +3,12 @@ NotchToolkit is a framework for iOS that allow developers use the iPhone X notch
 Inspired by <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I was working on this idea of blending app design with the <a href="https://twitter.com/hashtag/iPhoneX?src=hash">#iPhoneX</a> notch. 📲🤗 <a href="https://t.co/lj2AhxWNeE">pic.twitter.com/lj2AhxWNeE</a></p>&mdash; Luboš Volkov⚡️ (@0therPlanet) <a href="https://twitter.com/0therPlanet/status/909788913702785026">September 18, 2017</a></blockquote>
 
 ## Preview
-[**NotchToolbar**](https://github.com/AFathi/NotchToolkit/wiki/NotchToolbar)
+[**NotchToolbar**](https://github.com/AFathi/NotchToolkit/wiki/NotchToolbar)  
+
 ![Demo](preview.gif)
 
-[**Draw Notch**](https://github.com/AFathi/NotchToolkit#more-options)
+[**Draw Notch**](https://github.com/AFathi/NotchToolkit#more-options)  
+
 ![Demo](drawNotch.gif)
 
 ## Compatibility
