@@ -7,7 +7,7 @@ Inspired by <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="l
 
 ![Demo](preview.gif)
 
-[**Draw Notch**](https://github.com/AFathi/NotchToolkit#more-options)  
+[**Draw Notch**](#more-options)  
 
 ![Demo](drawNotch.gif)
 
