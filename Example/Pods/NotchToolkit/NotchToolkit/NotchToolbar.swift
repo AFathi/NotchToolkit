@@ -65,7 +65,7 @@ public class NotchToolbar: NSObject, UICollectionViewDataSource, UICollectionVie
     /**
      This function is required to initialize the NotchToolbar.
      */
-    public func initializeToolbar(_ vc:UIViewController) {
+    public func prepare(in vc:UIViewController) {
         NotificationCenter.default.addObserver(vc, selector: #selector(delegate?.deviceDidRotate), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
         if onlyFor10 && !UIScreen.main.isiPhone10 {
             print("NotchToolbar: If you want to enable NotchToolBar on this device please add this line to your code\nNotchToolBar().onlyFor10 = false")

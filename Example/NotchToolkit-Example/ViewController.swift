@@ -39,11 +39,15 @@ extension ViewController {
 //Step 2. implement delegate functions, check NotchToolkit Delegates
 
 class ViewController: UIViewController {
+    @IBOutlet var notchImage: UIImageView!
     
     //Step 3. initialize `NotchToolbar`
     let toolbar = NotchToolbar()
+    var imgView:UIImageView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         //Step 4. setup `NotchToolbar` options
         
         //Set to true to make the toolbar visible initially--default is false.
@@ -57,7 +61,7 @@ class ViewController: UIViewController {
         toolbar.toolList = toolListIcons
         
         toolbar.delegate = self
-        toolbar.initializeToolbar(self)
+        toolbar.prepare(in: self)
     }
     
     override func didReceiveMemoryWarning() {
@@ -75,9 +79,8 @@ extension ViewController: NotchToolbarDelegate {
     
     // This delegate function allows you to detect which toolbar icon was selected.
     func didTapToolIcon(_ tools: UICollectionView, toolIndex: IndexPath, section: Int, row: Int) {
-        print("this icon #\(row) in section #\(section)")
         let alert = UIAlertController(title: "NotchToolkit Alert", message: iconListInfo[row], preferredStyle: UIAlertControllerStyle.alert)
-        alert.addAction(UIAlertAction(title: "k", style: UIAlertActionStyle.cancel, handler: {
+        alert.addAction(UIAlertAction(title: "👍", style: UIAlertActionStyle.cancel, handler: {
             (UIAlertAction)in
         }))
         self.present(alert, animated: true, completion: nil)
@@ -93,5 +96,6 @@ extension ViewController {
             sender.setTitle("Hide Notch Toolbar", for: .normal)
         }
         toolbar.showOrHide()
+        
     }
 }
