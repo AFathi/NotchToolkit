@@ -53,6 +53,15 @@ pod 'NotchToolkit'
 ```
 $ pod install
 ```
+### Carthage
+1. Add this line to the `Cartfile` in your project directory
+```
+github "AFathi/NotchToolkit"
+```
+2.  Update your Carthage directory
+```
+$ carthage update
+```
 ### Manual
 Drag the `NotchToolkit.xcodeproj` file into your project then add `NotchToolkit` as an embedded binary of your targets.
 
