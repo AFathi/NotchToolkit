@@ -10,44 +10,46 @@
 		8B46D7347C51E13D6A8F5752 /* Pods_NotchToolkit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB89330EB9E75950CC5DD1E5 /* Pods_NotchToolkit_Example.framework */; };
 		9F0D407B72BC9454BFAE5029 /* Pods_NotchToolkit_ExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F265AEF721C276AAF9FEFDF8 /* Pods_NotchToolkit_ExampleTests.framework */; };
 		FB211D911F7AE647008D87CE /* CornerOvalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB211D901F7AE647008D87CE /* CornerOvalViewController.swift */; };
-		FB59EC881F7DC66E00BD6B01 /* NotchToolkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB59EC851F7DC65E00BD6B01 /* NotchToolkit.framework */; };
-		FB59EC891F7DC66E00BD6B01 /* NotchToolkit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FB59EC851F7DC65E00BD6B01 /* NotchToolkit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FBB4BF521F79ED69001992BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB4BF511F79ED69001992BA /* AppDelegate.swift */; };
 		FBB4BF541F79ED69001992BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB4BF531F79ED69001992BA /* ViewController.swift */; };
 		FBB4BF571F79ED69001992BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBB4BF551F79ED69001992BA /* Main.storyboard */; };
 		FBB4BF591F79ED69001992BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBB4BF581F79ED69001992BA /* Assets.xcassets */; };
 		FBB4BF5C1F79ED69001992BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBB4BF5A1F79ED69001992BA /* LaunchScreen.storyboard */; };
 		FBB4BF671F79ED69001992BA /* NotchToolkit_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB4BF661F79ED69001992BA /* NotchToolkit_ExampleTests.swift */; };
+		FBED19191FB024E600D810BF /* NotchToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = FBED19171FB024E600D810BF /* NotchToolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBED191C1FB024E600D810BF /* NotchToolkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBED19151FB024E600D810BF /* NotchToolkit.framework */; };
+		FBED191D1FB024E600D810BF /* NotchToolkit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FBED19151FB024E600D810BF /* NotchToolkit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FBED19221FB0251C00D810BF /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = FBED19211FB0251C00D810BF /* LICENSE */; };
+		FBED19251FB0253400D810BF /* NotchToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBED19231FB0253400D810BF /* NotchToolbar.swift */; };
+		FBED19261FB0253400D810BF /* NotchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBED19241FB0253400D810BF /* NotchBar.swift */; };
+		FBED19281FB0254200D810BF /* NotchToolbarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBED19271FB0254200D810BF /* NotchToolbarDelegate.swift */; };
+		FBED192D1FB0254D00D810BF /* UIScreen+NotchFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBED19291FB0254D00D810BF /* UIScreen+NotchFrame.swift */; };
+		FBED192E1FB0254D00D810BF /* UIScreen+iPhone10.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBED192A1FB0254D00D810BF /* UIScreen+iPhone10.swift */; };
+		FBED192F1FB0254D00D810BF /* UIScreen+NotchPositionMultiplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBED192B1FB0254D00D810BF /* UIScreen+NotchPositionMultiplier.swift */; };
+		FBED19301FB0254D00D810BF /* UIView+DrawNotch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBED192C1FB0254D00D810BF /* UIView+DrawNotch.swift */; };
+		FBED19361FB0256900D810BF /* DeviceOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBED19311FB0256800D810BF /* DeviceOrientation.swift */; };
+		FBED19371FB0256900D810BF /* NotchMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBED19321FB0256800D810BF /* NotchMode.swift */; };
+		FBED19381FB0256900D810BF /* NotchScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBED19331FB0256800D810BF /* NotchScroll.swift */; };
+		FBED19391FB0256900D810BF /* ToolIconTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBED19341FB0256800D810BF /* ToolIconTypes.swift */; };
+		FBED193A1FB0256900D810BF /* CurveSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBED19351FB0256800D810BF /* CurveSettings.swift */; };
+		FBED193D1FB0257D00D810BF /* NotchToolCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBED193B1FB0257D00D810BF /* NotchToolCell.swift */; };
+		FBED193E1FB0257D00D810BF /* NotchToolNameIconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBED193C1FB0257D00D810BF /* NotchToolNameIconCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		FB59EC841F7DC65E00BD6B01 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FB59EC7F1F7DC65E00BD6B01 /* NotchToolkit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = FBB4BF131F79EC77001992BA;
-			remoteInfo = NotchToolkit;
-		};
-		FB59EC861F7DC65E00BD6B01 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FB59EC7F1F7DC65E00BD6B01 /* NotchToolkit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = FBB4BF1C1F79EC77001992BA;
-			remoteInfo = NotchToolkitTests;
-		};
-		FB59EC8A1F7DC66E00BD6B01 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FB59EC7F1F7DC65E00BD6B01 /* NotchToolkit.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = FBB4BF121F79EC77001992BA;
-			remoteInfo = NotchToolkit;
-		};
 		FBB4BF631F79ED69001992BA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FBB4BF461F79ED69001992BA /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = FBB4BF4D1F79ED69001992BA;
 			remoteInfo = "NotchToolkit-Example";
+		};
+		FBED191A1FB024E600D810BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBB4BF461F79ED69001992BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBED19141FB024E600D810BF;
+			remoteInfo = NotchToolkit;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -58,7 +60,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				FB59EC891F7DC66E00BD6B01 /* NotchToolkit.framework in Embed Frameworks */,
+				FBED191D1FB024E600D810BF /* NotchToolkit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -73,7 +75,6 @@
 		F02A2878BAA2A5AB05FCF077 /* Pods-NotchToolkit-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotchToolkit-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NotchToolkit-Example/Pods-NotchToolkit-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F265AEF721C276AAF9FEFDF8 /* Pods_NotchToolkit_ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotchToolkit_ExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB211D901F7AE647008D87CE /* CornerOvalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerOvalViewController.swift; sourceTree = "<group>"; };
-		FB59EC7F1F7DC65E00BD6B01 /* NotchToolkit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NotchToolkit.xcodeproj; path = ../NotchToolkit.xcodeproj; sourceTree = "<group>"; };
 		FBB4BF4E1F79ED69001992BA /* NotchToolkit-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NotchToolkit-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB4BF511F79ED69001992BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBB4BF531F79ED69001992BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +85,24 @@
 		FBB4BF621F79ED69001992BA /* NotchToolkit-ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NotchToolkit-ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB4BF661F79ED69001992BA /* NotchToolkit_ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchToolkit_ExampleTests.swift; sourceTree = "<group>"; };
 		FBB4BF681F79ED69001992BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBED19151FB024E600D810BF /* NotchToolkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NotchToolkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBED19171FB024E600D810BF /* NotchToolkit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotchToolkit.h; sourceTree = "<group>"; };
+		FBED19181FB024E600D810BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBED19211FB0251C00D810BF /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		FBED19231FB0253400D810BF /* NotchToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchToolbar.swift; sourceTree = "<group>"; };
+		FBED19241FB0253400D810BF /* NotchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchBar.swift; sourceTree = "<group>"; };
+		FBED19271FB0254200D810BF /* NotchToolbarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchToolbarDelegate.swift; sourceTree = "<group>"; };
+		FBED19291FB0254D00D810BF /* UIScreen+NotchFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+NotchFrame.swift"; sourceTree = "<group>"; };
+		FBED192A1FB0254D00D810BF /* UIScreen+iPhone10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+iPhone10.swift"; sourceTree = "<group>"; };
+		FBED192B1FB0254D00D810BF /* UIScreen+NotchPositionMultiplier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+NotchPositionMultiplier.swift"; sourceTree = "<group>"; };
+		FBED192C1FB0254D00D810BF /* UIView+DrawNotch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+DrawNotch.swift"; sourceTree = "<group>"; };
+		FBED19311FB0256800D810BF /* DeviceOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceOrientation.swift; sourceTree = "<group>"; };
+		FBED19321FB0256800D810BF /* NotchMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchMode.swift; sourceTree = "<group>"; };
+		FBED19331FB0256800D810BF /* NotchScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchScroll.swift; sourceTree = "<group>"; };
+		FBED19341FB0256800D810BF /* ToolIconTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolIconTypes.swift; sourceTree = "<group>"; };
+		FBED19351FB0256800D810BF /* CurveSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveSettings.swift; sourceTree = "<group>"; };
+		FBED193B1FB0257D00D810BF /* NotchToolCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchToolCell.swift; sourceTree = "<group>"; };
+		FBED193C1FB0257D00D810BF /* NotchToolNameIconCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchToolNameIconCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB59EC881F7DC66E00BD6B01 /* NotchToolkit.framework in Frameworks */,
+				FBED191C1FB024E600D810BF /* NotchToolkit.framework in Frameworks */,
 				8B46D7347C51E13D6A8F5752 /* Pods_NotchToolkit_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,6 +120,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F0D407B72BC9454BFAE5029 /* Pods_NotchToolkit_ExampleTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBED19111FB024E600D810BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,21 +153,13 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		FB59EC801F7DC65E00BD6B01 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FB59EC851F7DC65E00BD6B01 /* NotchToolkit.framework */,
-				FB59EC871F7DC65E00BD6B01 /* NotchToolkitTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		FBB4BF451F79ED69001992BA = {
 			isa = PBXGroup;
 			children = (
-				FB59EC7F1F7DC65E00BD6B01 /* NotchToolkit.xcodeproj */,
+				FBED19211FB0251C00D810BF /* LICENSE */,
 				FBB4BF501F79ED69001992BA /* NotchToolkit-Example */,
 				FBB4BF651F79ED69001992BA /* NotchToolkit-ExampleTests */,
+				FBED19161FB024E600D810BF /* NotchToolkit */,
 				FBB4BF4F1F79ED69001992BA /* Products */,
 				7EC05BF2E10875F0D827AAD7 /* Pods */,
 				5DEBAB1F06A5E69658F7C2B4 /* Frameworks */,
@@ -153,6 +171,7 @@
 			children = (
 				FBB4BF4E1F79ED69001992BA /* NotchToolkit-Example.app */,
 				FBB4BF621F79ED69001992BA /* NotchToolkit-ExampleTests.xctest */,
+				FBED19151FB024E600D810BF /* NotchToolkit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -180,7 +199,81 @@
 			path = "NotchToolkit-ExampleTests";
 			sourceTree = "<group>";
 		};
+		FBED19161FB024E600D810BF /* NotchToolkit */ = {
+			isa = PBXGroup;
+			children = (
+				FBED19411FB025BB00D810BF /* Classes */,
+				FBED19401FB025B500D810BF /* Cells */,
+				FBED19441FB025D300D810BF /* Protocols */,
+				FBED19431FB025CB00D810BF /* Extenstions */,
+				FBED19421FB025C100D810BF /* Enumerations */,
+				FBED19171FB024E600D810BF /* NotchToolkit.h */,
+				FBED19181FB024E600D810BF /* Info.plist */,
+			);
+			path = NotchToolkit;
+			sourceTree = "<group>";
+		};
+		FBED19401FB025B500D810BF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FBED193B1FB0257D00D810BF /* NotchToolCell.swift */,
+				FBED193C1FB0257D00D810BF /* NotchToolNameIconCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FBED19411FB025BB00D810BF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FBED19241FB0253400D810BF /* NotchBar.swift */,
+				FBED19231FB0253400D810BF /* NotchToolbar.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FBED19421FB025C100D810BF /* Enumerations */ = {
+			isa = PBXGroup;
+			children = (
+				FBED19351FB0256800D810BF /* CurveSettings.swift */,
+				FBED19311FB0256800D810BF /* DeviceOrientation.swift */,
+				FBED19321FB0256800D810BF /* NotchMode.swift */,
+				FBED19331FB0256800D810BF /* NotchScroll.swift */,
+				FBED19341FB0256800D810BF /* ToolIconTypes.swift */,
+			);
+			path = Enumerations;
+			sourceTree = "<group>";
+		};
+		FBED19431FB025CB00D810BF /* Extenstions */ = {
+			isa = PBXGroup;
+			children = (
+				FBED192A1FB0254D00D810BF /* UIScreen+iPhone10.swift */,
+				FBED19291FB0254D00D810BF /* UIScreen+NotchFrame.swift */,
+				FBED192B1FB0254D00D810BF /* UIScreen+NotchPositionMultiplier.swift */,
+				FBED192C1FB0254D00D810BF /* UIView+DrawNotch.swift */,
+			);
+			path = Extenstions;
+			sourceTree = "<group>";
+		};
+		FBED19441FB025D300D810BF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FBED19271FB0254200D810BF /* NotchToolbarDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FBED19121FB024E600D810BF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBED19191FB024E600D810BF /* NotchToolkit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		FBB4BF4D1F79ED69001992BA /* NotchToolkit-Example */ = {
@@ -198,7 +291,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				FB59EC8B1F7DC66E00BD6B01 /* PBXTargetDependency */,
+				FBED191B1FB024E600D810BF /* PBXTargetDependency */,
 			);
 			name = "NotchToolkit-Example";
 			productName = "NotchToolkit-Example";
@@ -226,6 +319,24 @@
 			productReference = FBB4BF621F79ED69001992BA /* NotchToolkit-ExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		FBED19141FB024E600D810BF /* NotchToolkit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBED191E1FB024E600D810BF /* Build configuration list for PBXNativeTarget "NotchToolkit" */;
+			buildPhases = (
+				FBED19101FB024E600D810BF /* Sources */,
+				FBED19111FB024E600D810BF /* Frameworks */,
+				FBED19121FB024E600D810BF /* Headers */,
+				FBED19131FB024E600D810BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NotchToolkit;
+			productName = NotchToolkit;
+			productReference = FBED19151FB024E600D810BF /* NotchToolkit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -245,6 +356,10 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = FBB4BF4D1F79ED69001992BA;
 					};
+					FBED19141FB024E600D810BF = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = FBB4BF491F79ED69001992BA /* Build configuration list for PBXProject "NotchToolkit-Example" */;
@@ -258,36 +373,14 @@
 			mainGroup = FBB4BF451F79ED69001992BA;
 			productRefGroup = FBB4BF4F1F79ED69001992BA /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = FB59EC801F7DC65E00BD6B01 /* Products */;
-					ProjectRef = FB59EC7F1F7DC65E00BD6B01 /* NotchToolkit.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				FBB4BF4D1F79ED69001992BA /* NotchToolkit-Example */,
 				FBB4BF611F79ED69001992BA /* NotchToolkit-ExampleTests */,
+				FBED19141FB024E600D810BF /* NotchToolkit */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		FB59EC851F7DC65E00BD6B01 /* NotchToolkit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = NotchToolkit.framework;
-			remoteRef = FB59EC841F7DC65E00BD6B01 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FB59EC871F7DC65E00BD6B01 /* NotchToolkitTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = NotchToolkitTests.xctest;
-			remoteRef = FB59EC861F7DC65E00BD6B01 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		FBB4BF4C1F79ED69001992BA /* Resources */ = {
@@ -304,6 +397,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBED19131FB024E600D810BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBED19221FB0251C00D810BF /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,18 +531,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FBED19101FB024E600D810BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBED193D1FB0257D00D810BF /* NotchToolCell.swift in Sources */,
+				FBED193E1FB0257D00D810BF /* NotchToolNameIconCell.swift in Sources */,
+				FBED19361FB0256900D810BF /* DeviceOrientation.swift in Sources */,
+				FBED19371FB0256900D810BF /* NotchMode.swift in Sources */,
+				FBED19381FB0256900D810BF /* NotchScroll.swift in Sources */,
+				FBED19391FB0256900D810BF /* ToolIconTypes.swift in Sources */,
+				FBED193A1FB0256900D810BF /* CurveSettings.swift in Sources */,
+				FBED192D1FB0254D00D810BF /* UIScreen+NotchFrame.swift in Sources */,
+				FBED192E1FB0254D00D810BF /* UIScreen+iPhone10.swift in Sources */,
+				FBED192F1FB0254D00D810BF /* UIScreen+NotchPositionMultiplier.swift in Sources */,
+				FBED19301FB0254D00D810BF /* UIView+DrawNotch.swift in Sources */,
+				FBED19251FB0253400D810BF /* NotchToolbar.swift in Sources */,
+				FBED19281FB0254200D810BF /* NotchToolbarDelegate.swift in Sources */,
+				FBED19261FB0253400D810BF /* NotchBar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		FB59EC8B1F7DC66E00BD6B01 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = NotchToolkit;
-			targetProxy = FB59EC8A1F7DC66E00BD6B01 /* PBXContainerItemProxy */;
-		};
 		FBB4BF641F79ED69001992BA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = FBB4BF4D1F79ED69001992BA /* NotchToolkit-Example */;
 			targetProxy = FBB4BF631F79ED69001992BA /* PBXContainerItemProxy */;
+		};
+		FBED191B1FB024E600D810BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBED19141FB024E600D810BF /* NotchToolkit */;
+			targetProxy = FBED191A1FB024E600D810BF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -642,6 +764,56 @@
 			};
 			name = Release;
 		};
+		FBED191F1FB024E600D810BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = HDQTAK3S82;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = NotchToolkit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahmedbekhit.NotchToolkit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FBED19201FB024E600D810BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = HDQTAK3S82;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = NotchToolkit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahmedbekhit.NotchToolkit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -668,6 +840,15 @@
 			buildConfigurations = (
 				FBB4BF6F1F79ED69001992BA /* Debug */,
 				FBB4BF701F79ED69001992BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBED191E1FB024E600D810BF /* Build configuration list for PBXNativeTarget "NotchToolkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBED191F1FB024E600D810BF /* Debug */,
+				FBED19201FB024E600D810BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
