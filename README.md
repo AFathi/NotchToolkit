@@ -2,12 +2,23 @@
 NotchToolkit is a framework for iOS that allow developers use the iPhone X notch space in creative ways.
 Inspired by <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I was working on this idea of blending app design with the <a href="https://twitter.com/hashtag/iPhoneX?src=hash">#iPhoneX</a> notch. 📲🤗 <a href="https://t.co/lj2AhxWNeE">pic.twitter.com/lj2AhxWNeE</a></p>&mdash; Luboš Volkov⚡️ (@0therPlanet) <a href="https://twitter.com/0therPlanet/status/909788913702785026">September 18, 2017</a></blockquote>
 
+| Table of Contents  |  Description       |
+| ------------------ |:------------------:|
+| [Documentation](https://github.com/AFathi/NotchToolkit/wiki) | Describes the configuration options `NotchToolkit` offers |
+| [Preview](#preview)                                        | Displays preview images of `NotchToolkit` features |
+| [Compatibility](#compatibility) | Describes the `NotchToolkit` device and iOS compatibality |
+| [Example Project](#example-project) | Explains how to run the example project provided in this repository |
+| [Installation](#installation) | Describes the [CocoaPods](#cocoapods), [Carthage](#carthage), and [Manual](#manual) options to install `NotchToolkit`   |
+| [Implementation](#implement-in-your-project) | Lists the steps needed to implement `NotchToolkit` into your project |
+| [More Options](#more-options) | Describes an extra feature `NotchToolkit` supports |
+| [License](#license) | Describes `NotchToolkit` license |
+
 ## Preview
-[**NotchToolbar**](https://github.com/AFathi/NotchToolkit/wiki/NotchToolbar)  
+[**NotchToolbar**](https://github.com/AFathi/NotchToolkit/wiki/NotchToolbar)
 
 ![Demo](preview.gif)
 
-[**Draw Notch**](#more-options)  
+[**Draw Notch**](#more-options)
 
 ![Demo](drawNotch.gif)
 
@@ -107,7 +118,7 @@ toolbar.initializeToolbar(self)
 6. Call [`autoResize()`](https://github.com/AFathi/NotchToolkit/wiki/NotchToolbar#func-autoresize) method in the [`deviceDidRotate`](https://github.com/AFathi/NotchToolkit/wiki/NotchToolbarDelegate#func-devicedidrotate) delegate method
 ```
 func deviceDidRotate() {
-    toolbar.autoResize()
+toolbar.autoResize()
 }
 ```
 **You're all set! 🤓**
@@ -116,7 +127,7 @@ func deviceDidRotate() {
 This method allows you to show and hide the `NotchToolbar`. You can call this method in an `IBAction` that handles showing/hiding the toolbar.
 ```
 @IBAction func buttonClicked(_ sender: UIButton) {
-    toolbar.showOrHide()
+toolbar.showOrHide()
 }
 ```
 ## Handle Icon Selection
@@ -124,11 +135,11 @@ This method allows you to show and hide the `NotchToolbar`. You can call this me
 2. Handle the icon selection in the [`didTapToolIcon`](https://github.com/AFathi/NotchToolkit/wiki/NotchToolbarDelegate#func-didtaptoolicon_-tools-uicollectionview-toolindexindexpath-section-int-row-int) delegate method:
 ```
 func didTapToolIcon(_ tools: UICollectionView, toolIndex: IndexPath, section: Int, row: Int) {
-    if row == 0 {
-        print("first icon")
-    }else if row == 1 {
-        print("second icon")
-    }
+if row == 0 {
+print("first icon")
+}else if row == 1 {
+print("second icon")
+}
 }
 ```
 ## More Options
@@ -153,4 +164,3 @@ myView.draw(.corner, position: .diagonalAC, curve: 35)
 
 ## LICENSE
 `NotchToolkit` is under MIT license. Check the [LICENSE](LICENSE) file for more details.
-
