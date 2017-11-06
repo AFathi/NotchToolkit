@@ -40,7 +40,7 @@
                                     <segue destination="f5f-YO-Z9x" kind="show" id="WxB-G9-4ab"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_1318" translatesAutoresizingMaskIntoConstraints="NO" id="t8o-PU-2kD">
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t8o-PU-2kD">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -136,7 +136,4 @@
             <point key="canvasLocation" x="783.20000000000005" y="126.38680659670166"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="IMG_1318" width="1932" height="2576"/>
-    </resources>
 </document>

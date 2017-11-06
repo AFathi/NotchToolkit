@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -54,14 +54,14 @@
 		3808AA0CC13CA59E4F1D33041CBD9BE4 /* NotchMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotchMode.swift; path = NotchToolkit/Enumerators/NotchMode.swift; sourceTree = "<group>"; };
 		3A9015804CEB25B8B9C99C789C04941A /* UIView+OvalOrCorners.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+OvalOrCorners.swift"; path = "NotchToolkit/Extensions/UIView+OvalOrCorners.swift"; sourceTree = "<group>"; };
 		3DA3A76E843353AC046783DB4BABA632 /* NotchToolkit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NotchToolkit.h; path = NotchToolkit/NotchToolkit.h; sourceTree = "<group>"; };
-		4E3C59C0541A36304FBBD27605BF2035 /* Pods-NotchToolkit-Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NotchToolkit-Example.modulemap"; sourceTree = "<group>"; };
+		4E3C59C0541A36304FBBD27605BF2035 /* Pods-NotchToolkit-Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NotchToolkit-Example.modulemap"; sourceTree = "<group>"; };
 		4EB4FB8FDF46621A5F9E907C4ABC411A /* Pods-NotchToolkit-ExampleTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NotchToolkit-ExampleTests-umbrella.h"; sourceTree = "<group>"; };
 		4F6A7E58BC23A18DD1EC3B23C7B5AAAF /* NotchBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotchBar.swift; path = NotchToolkit/NotchBar.swift; sourceTree = "<group>"; };
 		56E0DE87C366FB16CBEFCC1F5BF41850 /* Pods-NotchToolkit-Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NotchToolkit-Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		58D14801FEE1517FE6BC8077FCFFC93A /* Pods_NotchToolkit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NotchToolkit_Example.framework; path = "Pods-NotchToolkit-Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5FCEE9F56CFED7DD35FF9147A6CA3D95 /* NotchToolkit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = NotchToolkit.modulemap; sourceTree = "<group>"; };
+		58D14801FEE1517FE6BC8077FCFFC93A /* Pods_NotchToolkit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotchToolkit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FCEE9F56CFED7DD35FF9147A6CA3D95 /* NotchToolkit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = NotchToolkit.modulemap; sourceTree = "<group>"; };
 		61A4439CCC98ACD5755995974D62A793 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		644AD75CE4E9B65E3A7753F62A3A2B0F /* Pods_NotchToolkit_ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NotchToolkit_ExampleTests.framework; path = "Pods-NotchToolkit-ExampleTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		644AD75CE4E9B65E3A7753F62A3A2B0F /* Pods_NotchToolkit_ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotchToolkit_ExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7026DAF7D1EE5440FD559C931E93EF4A /* Pods-NotchToolkit-Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NotchToolkit-Example-umbrella.h"; sourceTree = "<group>"; };
 		73F77770A8388BE2F076B16E55F03EE2 /* CurveSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CurveSettings.swift; path = NotchToolkit/Enumerators/CurveSettings.swift; sourceTree = "<group>"; };
@@ -70,13 +70,13 @@
 		89E1CAA05B6D25BEF8D7A45A6BA29461 /* Pods-NotchToolkit-Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NotchToolkit-Example-dummy.m"; sourceTree = "<group>"; };
 		8AC4C9E3227C8D684D17EBC75F64EB45 /* NotchToolkit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NotchToolkit-prefix.pch"; sourceTree = "<group>"; };
 		8C9946CC88FA827C62C473CB44324B0A /* NotchToolkit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NotchToolkit-dummy.m"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		95370DF281351F4C5EE9450B5CBC30B9 /* NotchToolkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NotchToolkit.framework; path = NotchToolkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95370DF281351F4C5EE9450B5CBC30B9 /* NotchToolkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NotchToolkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9910540D255035821A8E988658364EC9 /* Pods-NotchToolkit-ExampleTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NotchToolkit-ExampleTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9BA3AAC9D5BC6F09633EF646DEC89F40 /* Pods-NotchToolkit-ExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NotchToolkit-ExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		A60CC5F4A78D2997AF94CC2105F9D352 /* Pods-NotchToolkit-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NotchToolkit-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		AFB8C786DF719A9457A92E324AB0FBB8 /* NotchToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotchToolbar.swift; path = NotchToolkit/NotchToolbar.swift; sourceTree = "<group>"; };
-		B09FA8FCD5B6808E5D995C331FF430CA /* Pods-NotchToolkit-ExampleTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NotchToolkit-ExampleTests.modulemap"; sourceTree = "<group>"; };
+		B09FA8FCD5B6808E5D995C331FF430CA /* Pods-NotchToolkit-ExampleTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NotchToolkit-ExampleTests.modulemap"; sourceTree = "<group>"; };
 		B54F86C5DFA5823F4B7A688366817A86 /* Pods-NotchToolkit-ExampleTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NotchToolkit-ExampleTests-resources.sh"; sourceTree = "<group>"; };
 		B5FE654FDC9A357B02A4D457EDF65E3D /* NotchToolkit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NotchToolkit.xcconfig; sourceTree = "<group>"; };
 		BC04CA54B170944347B0A74F0430E3D8 /* Pods-NotchToolkit-Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NotchToolkit-Example-resources.sh"; sourceTree = "<group>"; };
@@ -159,7 +159,6 @@
 				3A9015804CEB25B8B9C99C789C04941A /* UIView+OvalOrCorners.swift */,
 				3F17D63B24B7BF01A89CDC958E0AAEC3 /* Support Files */,
 			);
-			name = NotchToolkit;
 			path = NotchToolkit;
 			sourceTree = "<group>";
 		};
@@ -332,7 +331,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0910;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -448,7 +447,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -456,14 +457,20 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
@@ -477,6 +484,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -636,7 +644,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -644,15 +654,21 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
