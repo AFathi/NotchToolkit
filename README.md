@@ -14,13 +14,15 @@ Inspired by <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="l
 | [License](#license) | Describes `NotchToolkit` license |
 
 ## Preview
+**NotchImageView**
+
+![imageViewPreview](http://ahmedbekhit.com/magic_notch_img.gif)
+
+
 [**NotchToolbar**](https://github.com/AFathi/NotchToolkit/wiki/NotchToolbar)
 
 ![toolbarPreview](http://ahmedbekhit.com/toolbar_preview.gif)
 
-**NotchImageView**
-
-![imageViewPreview](http://ahmedbekhit.com/magic_notch_img.gif)
 
 [**Draw Notch**](#more-options)
 
