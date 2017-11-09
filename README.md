@@ -14,7 +14,7 @@ Inspired by <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="l
 | [License](#license) | Describes `NotchToolkit` license |
 
 ## Preview
-**NotchImageView**
+[**NotchImageView**](https://github.com/AFathi/NotchToolkit/wiki/NotchImageView)
 
 ![imageViewPreview](http://ahmedbekhit.com/magic_notch_img.gif)
 
