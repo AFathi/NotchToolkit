@@ -16,11 +16,15 @@ Inspired by <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="l
 ## Preview
 [**NotchToolbar**](https://github.com/AFathi/NotchToolkit/wiki/NotchToolbar)
 
-![Demo](preview.gif)
+![toolbarPreview](http://ahmedbekhit.com/toolbar_preview.gif)
+
+**NotchImageView**
+
+![imageViewPreview](http://ahmedbekhit.com/magic_notch_img.gif)
 
 [**Draw Notch**](#more-options)
 
-![Demo](drawNotch.gif)
+![drawPreview](drawNotch.gif)
 
 ## Compatibility
 Although `NotchToolkit` is made for iPhone X, it can be implemented in older iPhone devices. This framework was tested on:
@@ -164,3 +168,4 @@ myView.draw(.corner, position: .diagonalAC, curve: 35)
 
 ## LICENSE
 `NotchToolkit` is under MIT license. Check the [LICENSE](LICENSE) file for more details.
+

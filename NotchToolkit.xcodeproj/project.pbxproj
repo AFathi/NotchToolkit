@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FB59EC771F7DC12700BD6B01 /* NotchToolNameIconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB59EC761F7DC12700BD6B01 /* NotchToolNameIconCell.swift */; };
 		FB59EC791F7DC1B400BD6B01 /* ToolIconTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB59EC781F7DC1B400BD6B01 /* ToolIconTypes.swift */; };
+		FB5F456D1FB3DF3D004C542D /* NotchImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5F456C1FB3DF3D004C542D /* NotchImageView.swift */; };
 		FBB4BF1D1F79EC77001992BA /* NotchToolkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB4BF131F79EC77001992BA /* NotchToolkit.framework */; };
 		FBB4BF221F79EC77001992BA /* NotchToolkitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB4BF211F79EC77001992BA /* NotchToolkitTests.swift */; };
 		FBB4BF241F79EC77001992BA /* NotchToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = FBB4BF161F79EC77001992BA /* NotchToolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		FB59EC761F7DC12700BD6B01 /* NotchToolNameIconCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchToolNameIconCell.swift; sourceTree = "<group>"; };
 		FB59EC781F7DC1B400BD6B01 /* ToolIconTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolIconTypes.swift; sourceTree = "<group>"; };
+		FB5F456C1FB3DF3D004C542D /* NotchImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotchImageView.swift; path = NotchToolkit/Classes/NotchImageView.swift; sourceTree = SOURCE_ROOT; };
 		FBB4BF131F79EC77001992BA /* NotchToolkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NotchToolkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB4BF161F79EC77001992BA /* NotchToolkit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotchToolkit.h; sourceTree = "<group>"; };
 		FBB4BF171F79EC77001992BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -80,6 +82,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB5F456E1FB3DF45004C542D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FBB4BF381F79ECBC001992BA /* NotchBar.swift */,
+				FB5F456C1FB3DF3D004C542D /* NotchImageView.swift */,
+				FBB4BF321F79ECBC001992BA /* NotchToolbar.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		FBB4BF091F79EC77001992BA = {
 			isa = PBXGroup;
 			children = (
@@ -102,8 +114,7 @@
 		FBB4BF151F79EC77001992BA /* NotchToolkit */ = {
 			isa = PBXGroup;
 			children = (
-				FBB4BF321F79ECBC001992BA /* NotchToolbar.swift */,
-				FBB4BF381F79ECBC001992BA /* NotchBar.swift */,
+				FB5F456E1FB3DF45004C542D /* Classes */,
 				FBB4BF731F79EDA4001992BA /* Cells */,
 				FBB4BF711F79ED8F001992BA /* Enumerations */,
 				FBB4BF741F79EDB2001992BA /* Extensions */,
@@ -279,6 +290,7 @@
 				FBB4BF3C1F79ECBC001992BA /* UIScreen+NotchFrame.swift in Sources */,
 				FBB4BF431F79ECBC001992BA /* NotchMode.swift in Sources */,
 				FBB4BF3F1F79ECBC001992BA /* NotchScroll.swift in Sources */,
+				FB5F456D1FB3DF3D004C542D /* NotchImageView.swift in Sources */,
 				FBB4BF421F79ECBC001992BA /* UIView+DrawNotch.swift in Sources */,
 				FBB4BF3A1F79ECBC001992BA /* DeviceOrientation.swift in Sources */,
 				FBB4BF3E1F79ECBC001992BA /* NotchToolbar.swift in Sources */,

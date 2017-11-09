@@ -10,6 +10,9 @@
 		8B46D7347C51E13D6A8F5752 /* Pods_NotchToolkit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB89330EB9E75950CC5DD1E5 /* Pods_NotchToolkit_Example.framework */; };
 		9F0D407B72BC9454BFAE5029 /* Pods_NotchToolkit_ExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F265AEF721C276AAF9FEFDF8 /* Pods_NotchToolkit_ExampleTests.framework */; };
 		FB211D911F7AE647008D87CE /* CornerOvalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB211D901F7AE647008D87CE /* CornerOvalViewController.swift */; };
+		FB5F45721FB3DFA0004C542D /* NotchImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5F45711FB3DFA0004C542D /* NotchImageView.swift */; };
+		FB5F45741FB3E029004C542D /* NotchImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5F45731FB3E029004C542D /* NotchImageViewController.swift */; };
+		FB5F45771FB3E178004C542D /* tst_img.JPG in Resources */ = {isa = PBXBuildFile; fileRef = FB5F45761FB3E178004C542D /* tst_img.JPG */; };
 		FBB4BF521F79ED69001992BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB4BF511F79ED69001992BA /* AppDelegate.swift */; };
 		FBB4BF541F79ED69001992BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB4BF531F79ED69001992BA /* ViewController.swift */; };
 		FBB4BF571F79ED69001992BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBB4BF551F79ED69001992BA /* Main.storyboard */; };
@@ -75,6 +78,9 @@
 		F02A2878BAA2A5AB05FCF077 /* Pods-NotchToolkit-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotchToolkit-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NotchToolkit-Example/Pods-NotchToolkit-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F265AEF721C276AAF9FEFDF8 /* Pods_NotchToolkit_ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotchToolkit_ExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB211D901F7AE647008D87CE /* CornerOvalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerOvalViewController.swift; sourceTree = "<group>"; };
+		FB5F45711FB3DFA0004C542D /* NotchImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotchImageView.swift; sourceTree = "<group>"; };
+		FB5F45731FB3E029004C542D /* NotchImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchImageViewController.swift; sourceTree = "<group>"; };
+		FB5F45761FB3E178004C542D /* tst_img.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tst_img.JPG; sourceTree = "<group>"; };
 		FBB4BF4E1F79ED69001992BA /* NotchToolkit-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NotchToolkit-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB4BF511F79ED69001992BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBB4BF531F79ED69001992BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -153,6 +159,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FB5F45751FB3E164004C542D /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				FB5F45761FB3E178004C542D /* tst_img.JPG */,
+				FBB4BF581F79ED69001992BA /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		FBB4BF451F79ED69001992BA = {
 			isa = PBXGroup;
 			children = (
@@ -181,11 +196,12 @@
 			children = (
 				FBB4BF511F79ED69001992BA /* AppDelegate.swift */,
 				FBB4BF531F79ED69001992BA /* ViewController.swift */,
+				FB5F45731FB3E029004C542D /* NotchImageViewController.swift */,
 				FB211D901F7AE647008D87CE /* CornerOvalViewController.swift */,
 				FBB4BF551F79ED69001992BA /* Main.storyboard */,
-				FBB4BF581F79ED69001992BA /* Assets.xcassets */,
 				FBB4BF5A1F79ED69001992BA /* LaunchScreen.storyboard */,
 				FBB4BF5D1F79ED69001992BA /* Info.plist */,
+				FB5F45751FB3E164004C542D /* Assets */,
 			);
 			path = "NotchToolkit-Example";
 			sourceTree = "<group>";
@@ -226,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				FBED19241FB0253400D810BF /* NotchBar.swift */,
+				FB5F45711FB3DFA0004C542D /* NotchImageView.swift */,
 				FBED19231FB0253400D810BF /* NotchToolbar.swift */,
 			);
 			path = Classes;
@@ -387,6 +404,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB5F45771FB3E178004C542D /* tst_img.JPG in Resources */,
 				FBB4BF5C1F79ED69001992BA /* LaunchScreen.storyboard in Resources */,
 				FBB4BF591F79ED69001992BA /* Assets.xcassets in Resources */,
 				FBB4BF571F79ED69001992BA /* Main.storyboard in Resources */,
@@ -520,6 +538,7 @@
 				FB211D911F7AE647008D87CE /* CornerOvalViewController.swift in Sources */,
 				FBB4BF541F79ED69001992BA /* ViewController.swift in Sources */,
 				FBB4BF521F79ED69001992BA /* AppDelegate.swift in Sources */,
+				FB5F45741FB3E029004C542D /* NotchImageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,6 +558,7 @@
 				FBED193E1FB0257D00D810BF /* NotchToolNameIconCell.swift in Sources */,
 				FBED19361FB0256900D810BF /* DeviceOrientation.swift in Sources */,
 				FBED19371FB0256900D810BF /* NotchMode.swift in Sources */,
+				FB5F45721FB3DFA0004C542D /* NotchImageView.swift in Sources */,
 				FBED19381FB0256900D810BF /* NotchScroll.swift in Sources */,
 				FBED19391FB0256900D810BF /* ToolIconTypes.swift in Sources */,
 				FBED193A1FB0256900D810BF /* CurveSettings.swift in Sources */,

@@ -39,15 +39,12 @@ extension ViewController {
 //Step 2. implement delegate functions, check NotchToolkit Delegates
 
 class ViewController: UIViewController {
-    @IBOutlet var notchImage: UIImageView!
     
     //Step 3. initialize `NotchToolbar`
     let toolbar = NotchToolbar()
-    var imgView:UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         //Step 4. setup `NotchToolbar` options
         
         //Set to true to make the toolbar visible initially--default is false.
